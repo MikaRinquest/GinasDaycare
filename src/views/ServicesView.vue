@@ -1,11 +1,11 @@
 <template>
-  <About />
+  <Services />
 </template>
 <script>
-import About from "@/components/About.vue";
+import Services from "@/components/Services.vue";
 export default {
   components: {
-    About,
+    Services,
   },
 };
 </script>
