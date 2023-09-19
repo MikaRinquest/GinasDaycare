@@ -41,43 +41,9 @@
       />
     </div>
   </div>
-  <div class="meals-plan">
-    <h2>Meal Plan</h2>
-    <div class="week-holder">
-      <div class="week-1">
-        <h3>Week 1</h3>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
-      </div>
-
-      <div class="we">
-        <h3>Week 2</h3>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
-      </div>
-    </div>
-  </div>
-  <div class="daily-program">
-    <h2>Daily Program</h2>
-    <div class="program-holder">
-      <table style="border: thin solid black">
-        <thead>
-          <td>Time</td>
-          <td>Activity</td>
-        </thead>
-        <tr>
-          <td>08:00 - 09:00</td>
-          <td>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</td>
-          <td>10:00 - 11:00</td>
-        </tr>
-        <tr>
-          <td>9:00 - 10:00</td>
-          <td>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</td>
-        </tr>
-        <tr>
-          <td>10:00 - 11:00</td>
-          <td>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</td>
-        </tr>
-      </table>
-    </div>
+  <div class="download-content">
+    <a href="/Meal_plan.pdf" download class="download"> Meal plan </a>
+    <a href="/Program.pdf" download class="download"> Program </a>
   </div>
 </template>
 
@@ -117,8 +83,22 @@ export default {};
   width: 25%;
 }
 
-.program-holder {
+.download-content {
+  height: 25%;
+  width: 100%;
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
+  padding-top: 5%;
+}
+
+.download {
+  display: flex;
+  border: 1px solid white;
+  text-decoration: none;
+  color: black;
+  background-color: burlywood;
+  height: 20%;
+  border-radius: 7px;
+  align-items: center;
 }
 </style>
