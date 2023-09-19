@@ -12,6 +12,25 @@ export default {
 </script>
 
 <style>
+@font-face {
+  font-family: "ComicSans";
+  src: local("ComicSans"),
+    url(./assets/fonts/LDFComicSans.ttf) format("truetype");
+}
+
+h1,
+h2,
+h3 {
+  font-family: "ComicSans", Helvetica, Arial;
+  font-weight: bold;
+  font-size: 25px;
+}
+
+p {
+  font-family: "ComicSans", Helvetica, Arial;
+  font-size: 18px;
+}
+
 #app {
   margin: 0;
   padding: 0;

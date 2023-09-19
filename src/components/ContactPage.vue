@@ -1,81 +1,87 @@
 <template>
-  <section id="contact-section">
-    <h2 class="title">Contact Us</h2>
-    <div class="info-holder">
-      <div class="contact-holder">
-        <div id="icon-holder">
-          <span class="span">
-            <fa :icon="[fas, 'phone']" class="icon" />
-            <p class="contact-info">111 222 3333</p>
-          </span>
-          <span class="span">
-            <fa :icon="['fas', 'envelope']" class="icon" />
-            <p class="contact-info">example@gmail.com</p>
-          </span>
+  <section>
+    <div class="contact-img">
+      <img src="https://i.postimg.cc/BQS1tPL8/Pic-3.jpg" class="img" />
+    </div>
+    <div id="contact-section">
+      <h2 class="title">Contact Us</h2>
+
+      <div class="info-holder">
+        <div class="contact-holder">
+          <div id="icon-holder">
+            <span class="span">
+              <fa :icon="[fas, 'phone']" class="icon" />
+              <p class="contact-info">111 222 3333</p>
+            </span>
+            <span class="span">
+              <fa :icon="['fas', 'envelope']" class="icon" />
+              <p class="contact-info">example@gmail.com</p>
+            </span>
+          </div>
+          <div class="map-holder">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3312.6595071098363!2d18.723184975400372!3d-33.87266491925846!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1dcc536c01e2579b%3A0x8075589bd9bc99ba!2sGina%20DayCare!5e0!3m2!1sen!2sza!4v1695104469361!5m2!1sen!2sza"
+              width="300"
+              height="250"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
         </div>
-        <div class="map-holder">
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3312.6595071098363!2d18.723184975400372!3d-33.87266491925846!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1dcc536c01e2579b%3A0x8075589bd9bc99ba!2sGina%20DayCare!5e0!3m2!1sen!2sza!4v1695104469361!5m2!1sen!2sza"
-            width="300"
-            height="250"
-            style="border: 0"
-            allowfullscreen=""
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
-          ></iframe>
+        <div class="form-holder">
+          <form @submit.prevent="submitForm" class="form">
+            <div class="input-holder">
+              <input
+                type="text"
+                name="name"
+                v-model="name"
+                placeholder="Name"
+                class="input"
+                required
+              />
+              <input
+                type="text"
+                name="surname"
+                v-model="surname"
+                placeholder="Surname"
+                class="input"
+                required
+              />
+            </div>
+            <div class="input-holder">
+              <input
+                type="email"
+                name="email"
+                v-model="email"
+                placeholder="Email address"
+                class="input"
+                required
+              />
+              <input
+                type="tel"
+                name="phone"
+                v-model="phone"
+                placeholder="Phone number"
+                maxlength="10"
+                class="input"
+                required
+              />
+            </div>
+            <div class="input-holder">
+              <textarea
+                name="message"
+                v-model="message"
+                placeholder="Please give a description on what you would like."
+                class="textbox"
+              ></textarea>
+            </div>
+            <div class="input-holder">
+              <button type="submit" class="button">SUBMIT</button>
+            </div>
+          </form>
         </div>
-      </div>
-      <div class="form-holder">
-        <form @submit.prevent="submitForm" class="form">
-          <div class="input-holder">
-            <input
-              type="text"
-              name="name"
-              v-model="name"
-              placeholder="Name"
-              class="input"
-              required
-            />
-            <input
-              type="text"
-              name="surname"
-              v-model="surname"
-              placeholder="Surname"
-              class="input"
-              required
-            />
-          </div>
-          <div class="input-holder">
-            <input
-              type="email"
-              name="email"
-              v-model="email"
-              placeholder="Email address"
-              class="input"
-              required
-            />
-            <input
-              type="tel"
-              name="phone"
-              v-model="phone"
-              placeholder="Phone number"
-              maxlength="10"
-              class="input"
-              required
-            />
-          </div>
-          <div class="input-holder">
-            <textarea
-              name="message"
-              v-model="message"
-              placeholder="Please give a description on what you would like."
-              class="textbox"
-            ></textarea>
-          </div>
-          <div class="input-holder">
-            <button type="submit" class="button">SUBMIT</button>
-          </div>
-        </form>
       </div>
     </div>
   </section>

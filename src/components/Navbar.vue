@@ -20,7 +20,6 @@ export default {};
   display: flex;
   justify-content: center;
   box-shadow: 5px 5px 10px #828282, -5px -5px 10px #ffffff;
-  margin-bottom: 2%;
 }
 
 .nav-holder {
