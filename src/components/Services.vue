@@ -1,65 +1,66 @@
 <template>
-  <div class="age-group">
-    <h2>Our classes</h2>
-    <div class="class-holder">
-      <div class="babies">
-        <img
-          src="https://i.postimg.cc/PqzZHHTy/crayons-1445054-1280.jpg"
-          class="grade-img"
-        />
-        <p class="grade-text">Ages 0 - 2 years</p>
-      </div>
+  <section id="services-holder">
+    <div class="age-group">
+      <h2>Our Classes</h2>
+      <div class="class-holder">
+        <div class="babies">
+          <img src="https://i.postimg.cc/YCf7KDxT/Baby.jpg" class="grade-img" />
+          <p class="grade-text">Ages 0 - 2 years</p>
+        </div>
 
-      <div class="toddlers">
-        <img
-          src="https://i.postimg.cc/PqzZHHTy/crayons-1445054-1280.jpg"
-          class="grade-img"
-        />
-        <p class="grade-text">3 - 6 years</p>
-      </div>
-      <div class="aftercare">
-        <img
-          src="https://i.postimg.cc/PqzZHHTy/crayons-1445054-1280.jpg"
-          class="grade-img"
-        />
-        <p class="grade-text">Aftercare</p>
-      </div>
-      <div class="extra-mural">
-        <img
-          src="https://i.postimg.cc/PqzZHHTy/crayons-1445054-1280.jpg"
-          class="grade-img"
-        />
-        <p class="grade-text">Extra mural</p>
+        <div class="toddlers">
+          <img
+            src="https://i.postimg.cc/m2jTq2y7/Toddlers.jpg"
+            class="grade-img"
+          />
+          <p class="grade-text">3 - 6 years</p>
+        </div>
+        <div class="aftercare">
+          <img
+            src="https://i.postimg.cc/NfBgprmg/Aftercare.jpg"
+            class="grade-img"
+          />
+          <p class="grade-text">Aftercare</p>
+        </div>
+        <div class="extra-mural">
+          <img
+            src="https://i.postimg.cc/Jnrmrfq9/Extra-mural.jpg"
+            class="grade-img"
+          />
+          <p class="grade-text">Extra mural</p>
+        </div>
       </div>
     </div>
-  </div>
-  <div class="afercare">
-    <h2>Aftercare</h2>
-    <div class="p-holder">
-      <p class="text">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur
-        culpa ad atque dignissimos nulla necessitatibus, ullam aperiam.
-        Veritatis accusantium cum doloremque natus quos possimus, illo libero
-        dignissimos praesentium officiis voluptatum?
+    <div class="afercare">
+      <h2>Aftercare</h2>
+      <div class="p-holder">
+        <p class="text">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur
+          culpa ad atque dignissimos nulla necessitatibus, ullam aperiam.
+          Veritatis accusantium cum doloremque natus quos possimus, illo libero
+          dignissimos praesentium officiis voluptatum?
+        </p>
+        <img
+          src="https://i.postimg.cc/PqzZHHTy/crayons-1445054-1280.jpg"
+          class="image"
+        />
+      </div>
+    </div>
+    <div class="meal-program">
+      <h2>Meal Plan & Program</h2>
+      <p>
+        Click the buttons below to download a copy of our meal plan and program
+        for the kids.
       </p>
-      <img
-        src="https://i.postimg.cc/PqzZHHTy/crayons-1445054-1280.jpg"
-        class="image"
-      />
+      <div class="download-content">
+        <a href="/Meal_plan.pdf" download class="download"> MEAL PLAN </a>
+        <a href="/Stationery-List.pdf" download class="download">
+          STATIONERY
+        </a>
+        <a href="/Program.pdf" download class="download"> PROGRAM </a>
+      </div>
     </div>
-  </div>
-  <div class="meal-program">
-    <h2>Meal Plan & Program</h2>
-    <p>
-      Click the buttons below to download a copy of our meal plan and program
-      for the kids.
-    </p>
-    <div class="download-content">
-      <a href="/Meal_plan.pdf" download class="download"> MEAL PLAN </a>
-      <a href="/Stationery-List.pdf" download class="download"> STATIONERY </a>
-      <a href="/Program.pdf" download class="download"> PROGRAM </a>
-    </div>
-  </div>
+  </section>
 </template>
 
 <script>
@@ -67,13 +68,25 @@ export default {};
 </script>
 
 <style scoped>
+#services-holder {
+  padding-left: 2%;
+}
 .text {
   max-width: 300px;
 }
 
+.babies,
+.toddlers,
+.aftercare,
+.extra-mural {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .grade-img {
   width: 75%;
-  height: auto;
+  height: 70%;
 }
 
 .grade-text {
