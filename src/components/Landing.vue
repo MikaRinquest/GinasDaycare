@@ -1,7 +1,12 @@
 <template>
   <section class="section">
     <div class="holder">
-      <h1 id="title">Gina's Daycare</h1>
+      <div class="title-holder">
+        <h1 id="title">Welcome to Gina's Daycare</h1>
+      </div>
+      <div class="img-holder">
+        <img src="https://i.postimg.cc/KYNjyMd5/Gina-Logo-transformed.png" />
+      </div>
     </div>
     <div class="info-holder">
       <div class="history">
@@ -61,10 +66,10 @@ export default {};
   justify-content: center;
   align-items: center;
   min-height: 85vh;
-  background-image: url("https://i.postimg.cc/nrWY5hk0/sc.jpg");
-  /* background-repeat: no-repeat; */
-  background-size: cover;
-
+  background-image: url("https://i.postimg.cc/NjzsrHHb/happy-1082921-1280.jpg");
+  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.1);
+  background-repeat: no-repeat;
+  background-size: auto;
   margin-top: -1%;
 }
 
@@ -74,7 +79,8 @@ export default {};
 
 #title {
   font-weight: bold;
-  font-size: 40px;
+  font-size: 65px;
+  color: ghostwhite;
 }
 
 .image {

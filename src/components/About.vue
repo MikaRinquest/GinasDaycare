@@ -8,10 +8,7 @@
         Veritatis accusantium cum doloremque natus quos possimus, illo libero
         dignissimos praesentium officiis voluptatum?
       </p>
-      <img
-        src="https://i.postimg.cc/PqzZHHTy/crayons-1445054-1280.jpg"
-        class="image"
-      />
+      <img src="https://i.postimg.cc/zX7m6qbZ/Pic-1.jpg" class="image" />
     </div>
   </div>
   <div class="mission">
@@ -23,10 +20,7 @@
         Veritatis accusantium cum doloremque natus quos possimus, illo libero
         dignissimos praesentium officiis voluptatum?
       </p>
-      <img
-        src="https://i.postimg.cc/PqzZHHTy/crayons-1445054-1280.jpg"
-        class="image"
-      />
+      <img src="https://i.postimg.cc/c40yFvJB/Pic-2.jpg" class="image" />
     </div>
   </div>
 </template>
