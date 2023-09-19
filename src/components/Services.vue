@@ -41,9 +41,16 @@
       />
     </div>
   </div>
-  <div class="download-content">
-    <a href="/Meal_plan.pdf" download class="download"> Meal plan </a>
-    <a href="/Program.pdf" download class="download"> Program </a>
+  <div class="meal-program">
+    <h2>Meal Plan & Program</h2>
+    <p>
+      Click the buttons below to download a copy of our meal plan and program
+      for the kids.
+    </p>
+    <div class="download-content">
+      <a href="/Meal_plan.pdf" download class="download"> MEAL PLAN </a>
+      <a href="/Program.pdf" download class="download"> PROGRAM </a>
+    </div>
   </div>
 </template>
 
@@ -83,12 +90,18 @@ export default {};
   width: 25%;
 }
 
+.meal-program {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2%;
+}
 .download-content {
   height: 25%;
-  width: 100%;
+  width: 60%;
   display: flex;
   justify-content: space-evenly;
-  padding-top: 5%;
+  margin-bottom: 1%;
 }
 
 .download {
@@ -99,6 +112,7 @@ export default {};
   background-color: burlywood;
   height: 20%;
   border-radius: 7px;
+  padding: 15px;
   align-items: center;
 }
 </style>

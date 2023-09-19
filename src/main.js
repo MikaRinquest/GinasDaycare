@@ -12,10 +12,14 @@ import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
 
 //This imports which kind of icons we can use
 // import { fas } from "@fortawesome/free-solid-svg-icons"; //This only lets us use solid icons (free version)
-import { faPhone, faEnvelope } from "@fortawesome/free-solid-svg-icons"; //This only lets us use solid icons (free version)
+import {
+  faPhone,
+  faEnvelope,
+  faLocationDot,
+} from "@fortawesome/free-solid-svg-icons"; //This only lets us use solid icons (free version)
 import { faTwitter } from "@fortawesome/free-brands-svg-icons"; //This only lets us use brand icons (free version)
 
-library.add(faPhone, faEnvelope, faTwitter);
+library.add(faPhone, faEnvelope, faTwitter, faLocationDot);
 
 createApp(App)
   .component("fa", FontAwesomeIcon)

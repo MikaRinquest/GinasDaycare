@@ -1,24 +1,28 @@
 <template>
   <section>
     <div class="contact-img">
-      <img src="https://i.postimg.cc/BQS1tPL8/Pic-3.jpg" class="img" />
+      <img src="https://i.postimg.cc/kgCMFy2M/Contact-img.png" class="img" />
     </div>
     <div id="contact-section">
-      <h2 class="title">Contact Us</h2>
+      <h2 class="title">Book a free tour</h2>
 
       <div class="info-holder">
         <div class="contact-holder">
           <div id="icon-holder">
             <span class="span">
               <fa :icon="[fas, 'phone']" class="icon" />
-              <p class="contact-info">111 222 3333</p>
+              <p class="contact-info">073 283 6633</p>
             </span>
             <span class="span">
               <fa :icon="['fas', 'envelope']" class="icon" />
-              <p class="contact-info">example@gmail.com</p>
+              <p class="contact-info">georgina1@gmail.com</p>
             </span>
           </div>
           <div class="map-holder">
+            <span class="span">
+              <fa :icon="[fas, 'location-dot']" class="icon" />
+              <p class="contact-info">Come find us</p>
+            </span>
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3312.6595071098363!2d18.723184975400372!3d-33.87266491925846!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1dcc536c01e2579b%3A0x8075589bd9bc99ba!2sGina%20DayCare!5e0!3m2!1sen!2sza!4v1695104469361!5m2!1sen!2sza"
               width="300"
@@ -107,9 +111,13 @@ export default {
   background-color: #5cbde466;
 }
 
+.img {
+  width: 100%;
+}
+
 .title {
-  padding-left: 15px;
-  padding-top: 1%;
+  margin: 0;
+  padding-bottom: 5px;
   height: 10%;
   font-size: 40px;
   text-align: center;
@@ -144,6 +152,9 @@ export default {
 .map-holder {
   display: flex;
   justify-content: center;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-left: 10%;
 }
 
 .contact-holder,

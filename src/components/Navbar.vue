@@ -16,7 +16,7 @@ export default {};
 
 <style scoped>
 #nav {
-  width: 95vw;
+  width: 94vw;
   display: flex;
   justify-content: center;
   box-shadow: 5px 5px 10px #828282, -5px -5px 10px #ffffff;

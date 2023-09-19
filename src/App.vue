@@ -18,6 +18,10 @@ export default {
     url(./assets/fonts/LDFComicSans.ttf) format("truetype");
 }
 
+body {
+  background-color: beige;
+}
+
 h1,
 h2,
 h3 {
