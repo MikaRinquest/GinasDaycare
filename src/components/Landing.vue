@@ -29,22 +29,29 @@
               src="https://i.postimg.cc/PqzZHHTy/crayons-1445054-1280.jpg"
               class="grade-img"
             />
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+            <p class="grade-text">Ages 0 - 2 years</p>
           </div>
 
-          <div class="grade-r">
+          <div class="toddlers">
             <img
               src="https://i.postimg.cc/PqzZHHTy/crayons-1445054-1280.jpg"
               class="grade-img"
             />
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+            <p class="grade-text">3 - 6 years</p>
           </div>
           <div class="aftercare">
             <img
               src="https://i.postimg.cc/PqzZHHTy/crayons-1445054-1280.jpg"
               class="grade-img"
             />
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+            <p class="grade-text">Aftercare</p>
+          </div>
+          <div class="extra-mural">
+            <img
+              src="https://i.postimg.cc/PqzZHHTy/crayons-1445054-1280.jpg"
+              class="grade-img"
+            />
+            <p class="grade-text">Extra mural</p>
           </div>
         </div>
       </div>
@@ -93,6 +100,11 @@ export default {};
 .grade-img {
   width: 75%;
   height: auto;
+}
+
+.grade-text {
+  width: 250px;
+  text-align: center;
 }
 
 .class-holder {

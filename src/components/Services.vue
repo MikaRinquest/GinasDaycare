@@ -7,22 +7,29 @@
           src="https://i.postimg.cc/PqzZHHTy/crayons-1445054-1280.jpg"
           class="grade-img"
         />
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+        <p class="grade-text">Ages 0 - 2 years</p>
       </div>
 
-      <div class="grade-r">
+      <div class="toddlers">
         <img
           src="https://i.postimg.cc/PqzZHHTy/crayons-1445054-1280.jpg"
           class="grade-img"
         />
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+        <p class="grade-text">3 - 6 years</p>
       </div>
       <div class="aftercare">
         <img
           src="https://i.postimg.cc/PqzZHHTy/crayons-1445054-1280.jpg"
           class="grade-img"
         />
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+        <p class="grade-text">Aftercare</p>
+      </div>
+      <div class="extra-mural">
+        <img
+          src="https://i.postimg.cc/PqzZHHTy/crayons-1445054-1280.jpg"
+          class="grade-img"
+        />
+        <p class="grade-text">Extra mural</p>
       </div>
     </div>
   </div>
@@ -49,6 +56,7 @@
     </p>
     <div class="download-content">
       <a href="/Meal_plan.pdf" download class="download"> MEAL PLAN </a>
+      <a href="/Stationery-List.pdf" download class="download"> STATIONERY </a>
       <a href="/Program.pdf" download class="download"> PROGRAM </a>
     </div>
   </div>
@@ -68,12 +76,13 @@ export default {};
   height: auto;
 }
 
+.grade-text {
+  width: 250px;
+  text-align: center;
+}
+
 .class-holder {
   display: flex;
-}
-.week-holder {
-  display: flex;
-  justify-content: space-around;
 }
 
 .p-holder {
@@ -114,5 +123,6 @@ export default {};
   border-radius: 7px;
   padding: 15px;
   align-items: center;
+  font-weight: 500;
 }
 </style>
