@@ -19,40 +19,6 @@
           />
         </div>
       </div>
-      <div class="classes">
-        <h2>Our Classes</h2>
-        <div class="class-holder">
-          <div class="babies">
-            <img
-              src="https://i.postimg.cc/YCf7KDxT/Baby.jpg"
-              class="grade-img"
-            />
-            <p class="grade-text">Ages 0 - 2 years</p>
-          </div>
-
-          <div class="toddlers">
-            <img
-              src="https://i.postimg.cc/m2jTq2y7/Toddlers.jpg"
-              class="grade-img"
-            />
-            <p class="grade-text">3 - 6 years</p>
-          </div>
-          <div class="aftercare">
-            <img
-              src="https://i.postimg.cc/NfBgprmg/Aftercare.jpg"
-              class="grade-img"
-            />
-            <p class="grade-text">Aftercare</p>
-          </div>
-          <div class="extra-mural">
-            <img
-              src="https://i.postimg.cc/Jnrmrfq9/Extra-mural.jpg"
-              class="grade-img"
-            />
-            <p class="grade-text">Extra mural</p>
-          </div>
-        </div>
-      </div>
     </div>
   </section>
 </template>

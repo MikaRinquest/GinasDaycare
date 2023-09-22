@@ -16,7 +16,7 @@
         <div class="contact-holder">
           <div id="icon-holder">
             <span class="span">
-              <fa :icon="[fas, 'phone']" class="icon" />
+              <fa :icon="['fas', 'phone']" class="icon" />
               <p class="contact-info">073 283 6633</p>
             </span>
             <span class="span">
@@ -115,7 +115,7 @@ export default {
       email: "",
       phone: "",
       message: "",
-      name: "Autoplay",
+      name: "",
       slides: [
         {
           id: "1",

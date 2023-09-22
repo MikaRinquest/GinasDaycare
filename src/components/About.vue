@@ -33,7 +33,9 @@
 </template>
 
 <script>
-import gsap from "gsap";
+import { gsap, DrawSVGPlugin } from "gsap/all";
+import ScrollTrigger from "gsap/ScrollTrigger";
+gsap.registerPlugin(ScrollTrigger);
 export default {
   methods: {
     beforeEnter(el) {
@@ -60,6 +62,10 @@ export default {
 
     enterMission(el, done) {
       gsap.to(el, {
+        scrollTrigger: {
+          trigger: el,
+          toggleActions: "restart none none none",
+        },
         duration: 1.5,
         x: 0,
         opacity: 1,
@@ -80,7 +86,6 @@ export default {
 
 .image {
   width: 35%;
-  transform: rotate(-5deg);
 }
 
 .p-holder1,

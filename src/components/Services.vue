@@ -3,47 +3,17 @@
     <div class="age-group">
       <h2>Our Classes</h2>
       <div class="class-holder">
-        <div class="babies">
-          <img src="https://i.postimg.cc/YCf7KDxT/Baby.jpg" class="grade-img" />
-          <p class="grade-text">Ages 0 - 2 years</p>
-        </div>
-
-        <div class="toddlers">
-          <img
-            src="https://i.postimg.cc/m2jTq2y7/Toddlers.jpg"
-            class="grade-img"
-          />
-          <p class="grade-text">3 - 6 years</p>
-        </div>
-        <div class="aftercare">
-          <img
-            src="https://i.postimg.cc/NfBgprmg/Aftercare.jpg"
-            class="grade-img"
-          />
-          <p class="grade-text">Aftercare</p>
-        </div>
-        <div class="extra-mural">
-          <img
-            src="https://i.postimg.cc/Jnrmrfq9/Extra-mural.jpg"
-            class="grade-img"
-          />
-          <p class="grade-text">Extra mural</p>
-        </div>
-      </div>
-    </div>
-    <div class="afercare">
-      <h2>Aftercare</h2>
-      <div class="p-holder">
-        <p class="text">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur
-          culpa ad atque dignissimos nulla necessitatibus, ullam aperiam.
-          Veritatis accusantium cum doloremque natus quos possimus, illo libero
-          dignissimos praesentium officiis voluptatum?
-        </p>
-        <img
-          src="https://i.postimg.cc/PqzZHHTy/crayons-1445054-1280.jpg"
-          class="image"
-        />
+        <transition-group appear @before-enter="beforeEnter" @enter="enter">
+          <div
+            class="classes"
+            v-for="group in groups"
+            :key="group.id"
+            :data-index="group.id"
+          >
+            <img :src="group.image" class="grade-img" />
+            <p class="grade-text">{{ group.age }}</p>
+          </div>
+        </transition-group>
       </div>
     </div>
     <div class="meal-program">
@@ -64,7 +34,52 @@
 </template>
 
 <script>
-export default {};
+import gsap from "gsap";
+export default {
+  data() {
+    return {
+      groups: [
+        {
+          id: "1",
+          age: "0 - 2",
+          image: "https://i.postimg.cc/YCf7KDxT/Baby.jpg",
+        },
+        {
+          id: "2",
+          age: "3 - 6",
+          image: "https://i.postimg.cc/m2jTq2y7/Toddlers.jpg",
+        },
+        {
+          id: "3",
+          age: "Aftercare",
+          image: "https://i.postimg.cc/NfBgprmg/Aftercare.jpg",
+        },
+        {
+          id: "4",
+          age: "Extra Mural",
+          image: "https://i.postimg.cc/Jnrmrfq9/Extra-mural.jpg",
+        },
+      ],
+    };
+  },
+
+  methods: {
+    beforeEnter(el) {
+      el.style.transform = "translateY(100px)";
+      el.style.opacity = 0;
+    },
+
+    enter(el, done) {
+      gsap.to(el, {
+        duration: 1.5,
+        y: 0,
+        opacity: 1,
+        onComplete: done,
+        delay: el.dataset.index * 0.3,
+      });
+    },
+  },
+};
 </script>
 
 <style scoped>
@@ -75,18 +90,34 @@ export default {};
   max-width: 300px;
 }
 
-.babies,
-.toddlers,
-.aftercare,
-.extra-mural {
+.class-holder > div {
+  flex: 50%;
+}
+
+.classes {
   display: flex;
   flex-direction: column;
   align-items: center;
+  /* background-color: #ddc;
+  border: solid 5vmin #eee;
+  border-bottom-color: #fff;
+  border-left-color: #eee;
+  border-radius: 2px;
+  border-right-color: #eee;
+  border-top-color: #ddd;
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.25) inset,
+    0 5px 10px 5px rgba(0, 0, 0, 0.25); */
+  justify-content: center;
 }
 
 .grade-img {
   width: 75%;
   height: 70%;
+  /* border: solid 2px;
+  border-bottom-color: #ffe;
+  border-left-color: #eed;
+  border-right-color: #eed;
+  border-top-color: #ccb; */
 }
 
 .grade-text {
