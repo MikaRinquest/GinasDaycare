@@ -1,8 +1,14 @@
 <template>
   <section>
-    <div class="contact-img">
-      <img src="https://i.postimg.cc/kgCMFy2M/Contact-img.png" class="img" />
-    </div>
+    <Carousel :autoplay="2000" :items-to-show="5" :wrap-around="true">
+      <Slide v-for="slide in slides" :key="slide.id">
+        <div class="contact-img">
+          <img :src="slide.img" class="img" />
+        </div>
+      </Slide>
+
+      <template #addons> </template>
+    </Carousel>
     <div id="contact-section">
       <h2 class="title">Book a free tour</h2>
 
@@ -99,6 +105,8 @@
 </template>
 
 <script>
+import "vue3-carousel/dist/carousel.css";
+import { Carousel, Slide } from "vue3-carousel";
 export default {
   data() {
     return {
@@ -107,7 +115,26 @@ export default {
       email: "",
       phone: "",
       message: "",
+      name: "Autoplay",
+      slides: [
+        {
+          id: "1",
+          img: "https://i.postimg.cc/ZqDCq6bX/Contact-2.png",
+        },
+        {
+          id: "2",
+          img: "https://i.postimg.cc/Gpp4rXCk/Contact-1.png",
+        },
+        {
+          id: "3",
+          img: "https://i.postimg.cc/76GbJbbh/Contact-3.png",
+        },
+      ],
     };
+  },
+  components: {
+    Carousel,
+    Slide,
   },
 };
 </script>
@@ -119,7 +146,7 @@ export default {
 }
 
 .img {
-  width: 100%;
+  height: 250px;
 }
 
 .title {
