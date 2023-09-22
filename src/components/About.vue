@@ -7,7 +7,9 @@
           Every child need to be cared by a family with LOVE, RESPECT &
           SECURITY.We visualise this role.
         </p>
-        <img src="https://i.postimg.cc/zX7m6qbZ/Pic-1.jpg" class="image" />
+        <transition appear @before-enter="beforeEnter" @enter="enter">
+          <img src="https://i.postimg.cc/zX7m6qbZ/Pic-1.jpg" class="image" />
+        </transition>
       </div>
     </div>
     <div class="mission">
@@ -18,14 +20,57 @@
           especially those in need. We help them to be disciplined, confident to
           shape their own future and be part of their community development.
         </p>
-        <img src="https://i.postimg.cc/c40yFvJB/Pic-2.jpg" class="image" />
+        <transition
+          appear
+          @before-enter="beforeEnterMission"
+          @enter="enterMission"
+        >
+          <img src="https://i.postimg.cc/c40yFvJB/Pic-2.jpg" class="image" />
+        </transition>
       </div>
     </div>
   </section>
 </template>
 
 <script>
-export default {};
+import gsap from "gsap";
+export default {
+  methods: {
+    beforeEnter(el) {
+      el.style.transform = "translateX(60px)";
+      el.style.opacity = 0;
+    },
+
+    enter(el, done) {
+      console.log("Start of the animation process");
+      gsap.to(el, {
+        duration: 1.5,
+        x: 0,
+        opacity: 1,
+        ease: "bounce.out",
+        rotate: 5,
+        onComplete: done,
+      });
+    },
+
+    beforeEnterMission(el) {
+      el.style.transform = "translateX(-60px)";
+      el.style.opacity = 0;
+    },
+
+    enterMission(el, done) {
+      gsap.to(el, {
+        duration: 1.5,
+        x: 0,
+        opacity: 1,
+        ease: "bounce.out",
+        rotate: 5,
+        delay: 1,
+        onComplete: done,
+      });
+    },
+  },
+};
 </script>
 
 <style scoped>
