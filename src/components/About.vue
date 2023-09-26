@@ -1,25 +1,30 @@
 <template>
   <section id="about-holder">
     <div class="vision">
-      <h2>Our Vision</h2>
       <div class="p-holder1">
-        <p class="text">
-          Every child need to be cared by a family with LOVE, RESPECT &
-          SECURITY.We visualise this role.
-        </p>
+        <div>
+          <h2 class="vision-title">Our Vision</h2>
+          <p class="text">
+            Every child need to be cared by a family with LOVE, RESPECT &
+            SECURITY.We visualise this role.
+          </p>
+        </div>
         <transition appear @before-enter="beforeEnter" @enter="enter">
           <img src="https://i.postimg.cc/zX7m6qbZ/Pic-1.jpg" class="image" />
         </transition>
       </div>
     </div>
     <div class="mission">
-      <h2 class="mission-title">Our Mission</h2>
       <div class="p-holder2">
-        <p class="text">
-          At Ginas Day-Educare we build children from different backgrounds,
-          especially those in need. We help them to be disciplined, confident to
-          shape their own future and be part of their community development.
-        </p>
+        <div>
+          <h2 class="mission-title">Our Mission</h2>
+          <p class="text">
+            At Ginas Day-Educare we build children from different backgrounds,
+            especially those in need. We help them to be disciplined, confident
+            to shape their own future and be part of their community
+            development.
+          </p>
+        </div>
         <transition
           appear
           @before-enter="beforeEnterMission"
@@ -82,6 +87,20 @@ export default {
 <style scoped>
 #about-holder {
   padding-left: 2%;
+  background-image: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url("https://i.postimg.cc/yNLg4rcm/About-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  color: white;
+}
+
+.vision-title {
+  margin-top: 0px;
+  padding-top: 2%;
 }
 
 .image {
@@ -93,7 +112,9 @@ export default {
   max-width: 100vw;
   display: flex;
   justify-content: space-around;
-  margin-bottom: 4%;
+  align-items: center;
+  padding-top: 2%;
+  padding-bottom: 2%;
 }
 
 .mission-title {

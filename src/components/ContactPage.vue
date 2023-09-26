@@ -57,6 +57,7 @@
                 placeholder="Name"
                 class="input"
                 required
+                autocomplete="on"
               />
               <input
                 type="text"
@@ -65,6 +66,7 @@
                 placeholder="Surname"
                 class="input"
                 required
+                autocomplete="on"
               />
             </div>
             <div class="input-holder">
@@ -75,6 +77,7 @@
                 placeholder="Email address"
                 class="input"
                 required
+                autocomplete="on"
               />
               <input
                 type="tel"
@@ -84,6 +87,7 @@
                 maxlength="10"
                 class="input"
                 required
+                autocomplete="on"
               />
             </div>
             <div class="input-holder">
@@ -151,6 +155,7 @@ export default {
 
 .title {
   margin: 0;
+  padding-top: 1%;
   padding-bottom: 5px;
   height: 10%;
   font-size: 40px;

@@ -26,7 +26,7 @@ h1,
 h2,
 h3 {
   font-family: "ComicSans", Helvetica, Arial;
-  font-weight: bold;
+  font-weight: 500;
   font-size: 25px;
 }
 

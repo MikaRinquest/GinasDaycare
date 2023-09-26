@@ -1,7 +1,7 @@
 <template>
   <section id="services-holder">
     <div class="age-group">
-      <h2>Our Classes</h2>
+      <h2 class="class-title">Our Classes</h2>
       <div class="class-holder">
         <transition-group appear @before-enter="beforeEnter" @enter="enter">
           <div
@@ -17,17 +17,19 @@
       </div>
     </div>
     <div class="meal-program">
-      <h2>Meal Plan & Program</h2>
+      <h2>Meal Plan, Stationary List & Extra Mural Activities</h2>
       <p>
-        Click the buttons below to download a copy of our meal plan and program
-        for the kids.
+        Click the buttons below to download a copy of our Meal Plan,Stationary
+        List or Extra Mural Activites. for the kids.
       </p>
       <div class="download-content">
         <a href="/Meal_plan.pdf" download class="download"> MEAL PLAN </a>
-        <a href="/Stationery-List.pdf" download class="download">
+        <a href="/Stationary_list.pdf" download class="download">
           STATIONERY
         </a>
-        <a href="/Program.pdf" download class="download"> PROGRAM </a>
+        <a href="/Stationary_list.pdf" download class="download">
+          EXTRA MURAL ACTIVITIES
+        </a>
       </div>
     </div>
   </section>
@@ -57,7 +59,7 @@ export default {
         {
           id: "4",
           age: "Extra Mural",
-          image: "https://i.postimg.cc/Jnrmrfq9/Extra-mural.jpg",
+          image: "https://i.postimg.cc/k4Z2D6jD/Extra-mural-new.jpg",
         },
       ],
     };
@@ -86,8 +88,8 @@ export default {
 #services-holder {
   padding-left: 2%;
 }
-.text {
-  max-width: 300px;
+.class-title {
+  text-align: center;
 }
 
 .class-holder > div {
