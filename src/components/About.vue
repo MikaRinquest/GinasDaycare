@@ -18,7 +18,7 @@
       <div class="p-holder2">
         <div>
           <h2 class="mission-title">Our Mission</h2>
-          <p class="text">
+          <p class="text text-end">
             At Ginas Day-Educare we build children from different backgrounds,
             especially those in need. We help them to be disciplined, confident
             to shape their own future and be part of their community
@@ -111,7 +111,7 @@ export default {
 .p-holder2 {
   max-width: 100vw;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: center;
   padding-top: 2%;
   padding-bottom: 2%;
@@ -128,10 +128,9 @@ export default {
 
 .text {
   max-width: 300px;
-  text-align: end;
 }
 
-div + p:nth-child(2) {
+.text-end {
   text-align: end;
 }
 
