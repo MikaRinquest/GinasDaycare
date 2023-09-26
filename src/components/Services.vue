@@ -100,7 +100,7 @@ export default {
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* background-color: #ddc;
+  background-color: #ddc;
   border: solid 5vmin #eee;
   border-bottom-color: #fff;
   border-left-color: #eee;
@@ -108,7 +108,7 @@ export default {
   border-right-color: #eee;
   border-top-color: #ddd;
   box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.25) inset,
-    0 5px 10px 5px rgba(0, 0, 0, 0.25); */
+    0 5px 10px 5px rgba(0, 0, 0, 0.25);
   justify-content: center;
 }
 

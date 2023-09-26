@@ -28,7 +28,7 @@
               <p class="contact-info">
                 Operating hours: Mon - Thurs 06:30 - 17:00
               </p>
-              <p class="contact-info">Operating hours:Fridays 06:30 - 16:00</p>
+              <p class="contact-info">Operating hours: Fridays 06:30 - 16:00</p>
             </span>
           </div>
           <div class="map-holder">
