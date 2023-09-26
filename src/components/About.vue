@@ -128,6 +128,7 @@ export default {
 
 .text {
   max-width: 300px;
+  text-align: end;
 }
 
 div + p:nth-child(2) {
