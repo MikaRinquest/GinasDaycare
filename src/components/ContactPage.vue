@@ -127,7 +127,7 @@ export default {
         },
         {
           id: "2",
-          img: "https://i.postimg.cc/Gpp4rXCk/Contact-1.png",
+          img: "https://i.postimg.cc/cL3XQ4Lz/0-2.jpg",
         },
         {
           id: "3",

@@ -1,10 +1,10 @@
 <template>
   <nav id="nav">
     <div class="nav-holder">
-      <router-link to="/">Home</router-link>
-      <router-link to="/about">About</router-link>
-      <router-link to="/services">Services</router-link>
-      <router-link to="/contact">Contact Us</router-link>
+      <router-link class="route-name" to="/">Home</router-link>
+      <router-link class="route-name" to="/about">About</router-link>
+      <router-link class="route-name" to="/services">Services</router-link>
+      <router-link class="route-name" to="/contact">Contact Us</router-link>
     </div>
   </nav>
   <router-view />
@@ -25,12 +25,23 @@ export default {};
   display: flex;
   justify-content: center;
   box-shadow: 5px 5px 10px #828282, -5px -5px 10px #ffffff;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url("https://i.postimg.cc/13mTT3Zj/nav-2-1-2.pngg");
+  background-size: contain;
 }
 
 .nav-holder {
   display: flex;
   justify-content: space-evenly;
   width: 45%;
+}
+
+.route-name {
+  font-family: "ComicSans", Helvetica, Arial;
+  font-size: 18px;
+  text-transform: uppercase;
+  color: White;
+  font-weight: 500;
 }
 
 /* router transitions */

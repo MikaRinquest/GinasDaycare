@@ -43,18 +43,18 @@ export default {
       groups: [
         {
           id: "1",
-          age: "0 - 2",
-          image: "https://i.postimg.cc/YCf7KDxT/Baby.jpg",
+          age: "0 - 2 years old",
+          image: "https://i.postimg.cc/Gpp4rXCk/Contact-1.png",
         },
         {
           id: "2",
-          age: "3 - 6",
-          image: "https://i.postimg.cc/m2jTq2y7/Toddlers.jpg",
+          age: "3 - 6 years old",
+          image: "https://i.postimg.cc/FHxJt2WR/3-6.jpg",
         },
         {
           id: "3",
           age: "Aftercare",
-          image: "https://i.postimg.cc/NfBgprmg/Aftercare.jpg",
+          image: "https://i.postimg.cc/j5fxTfxX/aftercare.jpg",
         },
         {
           id: "4",
@@ -161,6 +161,7 @@ export default {
 
 .download {
   display: flex;
+  font-family: "ComicSans", Helvetica, Arial;
   border: 1px solid white;
   text-decoration: none;
   color: black;
@@ -169,6 +170,6 @@ export default {
   border-radius: 7px;
   padding: 15px;
   align-items: center;
-  font-weight: 500;
+  font-weight: 600;
 }
 </style>

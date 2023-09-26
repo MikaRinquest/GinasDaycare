@@ -3,7 +3,7 @@
     <div class="vision">
       <div class="p-holder1">
         <div>
-          <h2 class="vision-title">Our Vision</h2>
+          <h2 class="vision-title title">Our Vision</h2>
           <p class="text">
             Every child need to be cared by a family with LOVE, RESPECT &
             SECURITY.We visualise this role.
@@ -17,7 +17,7 @@
     <div class="mission">
       <div class="p-holder2">
         <div>
-          <h2 class="mission-title">Our Mission</h2>
+          <h2 class="mission-title title">Our Mission</h2>
           <p class="text text-end">
             At Ginas Day-Educare we build children from different backgrounds,
             especially those in need. We help them to be disciplined, confident
@@ -98,6 +98,10 @@ export default {
   color: white;
 }
 
+.title {
+  margin-bottom: 5px;
+}
+
 .vision-title {
   margin-top: 0px;
   padding-top: 2%;
@@ -128,6 +132,7 @@ export default {
 
 .text {
   max-width: 300px;
+  margin-top: 5px;
 }
 
 .text-end {
