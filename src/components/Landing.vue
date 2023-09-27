@@ -5,18 +5,17 @@
     </div>
     <div class="info-holder">
       <div class="history">
-        <h2>Our History</h2>
         <div class="p-holder">
-          <p class="text">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur
-            culpa ad atque dignissimos nulla necessitatibus, ullam aperiam.
-            Veritatis accusantium cum doloremque natus quos possimus, illo
-            libero dignissimos praesentium officiis voluptatum?
-          </p>
-          <img
-            src="https://i.postimg.cc/PqzZHHTy/crayons-1445054-1280.jpg"
-            class="image"
-          />
+          <div>
+            <h2>Our History</h2>
+            <p class="text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Consequatur culpa ad atque dignissimos nulla necessitatibus, ullam
+              aperiam. Veritatis accusantium cum doloremque natus quos possimus,
+              illo libero dignissimos praesentium officiis voluptatum?
+            </p>
+          </div>
+          <img src="https://i.postimg.cc/VsnNqq0G/Pic-4.jpg" class="image" />
         </div>
       </div>
     </div>
@@ -48,17 +47,19 @@ export default {};
 }
 
 .image {
-  width: 35%;
+  width: 25%;
 }
 
 .p-holder {
   max-width: 100vw;
   display: flex;
   justify-content: space-around;
+  align-items: center;
+  margin-top: 1%;
 }
 
 .text {
-  max-width: 300px;
+  max-width: 400px;
 }
 
 .babies,
