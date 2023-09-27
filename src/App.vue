@@ -13,6 +13,9 @@ export default {
 
 <style>
 @font-face {
+  font-family: "SassoonPrimary";
+  src: local("SassoonPrimary"),
+    url(./assets/fonts/Sassoon-Primary.otf) format("truetype");
   font-family: "ComicSans";
   src: local("ComicSans"),
     url(./assets/fonts/LDFComicSans.ttf) format("truetype");
@@ -25,13 +28,13 @@ body {
 h1,
 h2,
 h3 {
-  font-family: "ComicSans", Helvetica, Arial;
+  font-family: "SassoonPrimary", Helvetica, Arial;
   font-weight: 500;
   font-size: 25px;
 }
 
 p {
-  font-family: "ComicSans", Helvetica, Arial;
+  font-family: "SassoonPrimary", Helvetica, Arial;
   font-size: 18px;
 }
 

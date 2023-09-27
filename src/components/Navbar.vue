@@ -38,7 +38,7 @@ export default {};
 }
 
 .route-name {
-  font-family: "ComicSans", Helvetica, Arial;
+  font-family: "SassoonPrimary", Helvetica, Arial;
   font-size: 18px;
   text-transform: uppercase;
   font-weight: 500;

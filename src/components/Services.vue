@@ -26,12 +26,12 @@
         List or Extra Mural Activities for the kids.
       </p>
       <div class="download-content">
-        <a href="/Meal_plan.pdf" download class="download"> MEAL PLAN </a>
-        <a href="/Stationary_list.pdf" download class="download">
-          STATIONERY
-        </a>
+        <a href="/MENU.pdf" download class="download"> MEAL PLAN </a>
         <a href="/Application_form.pdf" download class="download">
           EXTRA MURAL ACTIVITIES
+        </a>
+        <a href="/Stationary_list.pdf" download class="download">
+          STATIONERY
         </a>
       </div>
     </div>
@@ -169,7 +169,7 @@ export default {
 
 .download {
   display: flex;
-  font-family: "ComicSans", Helvetica, Arial;
+  font-family: "SassoonPrimary", Helvetica, Arial;
   border: 1px solid white;
   text-decoration: none;
   color: black;
