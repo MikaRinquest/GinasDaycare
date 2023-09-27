@@ -21,7 +21,7 @@
             </span>
             <span class="span">
               <fa :icon="['fas', 'envelope']" class="icon" />
-              <p class="contact-info">georgina1@gmail.com</p>
+              <p class="contact-info">georginalukas1@gmail.com</p>
             </span>
             <span class="span">
               <fa :icon="['fas', 'clock']" class="icon" />

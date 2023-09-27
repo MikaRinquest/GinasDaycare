@@ -12,6 +12,9 @@
           >
             <img :src="group.image" class="grade-img" />
             <p class="grade-text">{{ group.age }}</p>
+            <p class="grade-text" v-if="group.extra !== null">
+              {{ group.extra }}
+            </p>
           </div>
         </transition-group>
       </div>
@@ -20,14 +23,14 @@
       <h2>Meal Plan, Stationary List & Extra Mural Activities</h2>
       <p>
         Click the buttons below to download a copy of our Meal Plan,Stationary
-        List or Extra Mural Activites. for the kids.
+        List or Extra Mural Activities for the kids.
       </p>
       <div class="download-content">
         <a href="/Meal_plan.pdf" download class="download"> MEAL PLAN </a>
         <a href="/Stationary_list.pdf" download class="download">
           STATIONERY
         </a>
-        <a href="/Stationary_list.pdf" download class="download">
+        <a href="/Application_form.pdf" download class="download">
           EXTRA MURAL ACTIVITIES
         </a>
       </div>
@@ -45,21 +48,25 @@ export default {
           id: "1",
           age: "0 - 2 years old",
           image: "https://i.postimg.cc/Gpp4rXCk/Contact-1.png",
+          extra: "",
         },
         {
           id: "2",
           age: "3 - 6 years old",
           image: "https://i.postimg.cc/FHxJt2WR/3-6.jpg",
+          extra: "",
         },
         {
           id: "3",
           age: "Aftercare",
           image: "https://i.postimg.cc/j5fxTfxX/aftercare.jpg",
+          extra: "",
         },
         {
           id: "4",
           age: "Extra Mural",
           image: "https://i.postimg.cc/k4Z2D6jD/Extra-mural-new.jpg",
+          extra: "Computer Kids",
         },
       ],
     };
@@ -125,6 +132,7 @@ export default {
 .grade-text {
   width: 250px;
   text-align: center;
+  margin: 5px;
 }
 
 .class-holder {
