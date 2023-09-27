@@ -33,7 +33,7 @@ export default {};
   justify-content: center;
   align-items: center;
   min-height: 85vh;
-  background-image: url("https://i.postimg.cc/Jh6Mk83W/Landing-gina.png");
+  background-image: url("");
 }
 
 .info-holder {
