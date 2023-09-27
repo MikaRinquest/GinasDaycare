@@ -33,7 +33,8 @@ export default {};
   justify-content: center;
   align-items: center;
   min-height: 85vh;
-  background-image: url("");
+  background-image: url("https://i.postimg.cc/C1tnf8pr/landing-i-2.png");
+  background-size: contain;
 }
 
 .info-holder {
