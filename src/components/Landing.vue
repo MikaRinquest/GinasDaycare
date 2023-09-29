@@ -34,7 +34,8 @@ export default {};
   align-items: center;
   min-height: 85vh;
   background-image: url("https://i.postimg.cc/C1tnf8pr/landing-i-2.png");
-  background-size: contain;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .info-holder {
@@ -46,7 +47,6 @@ export default {};
   font-size: 65px;
   color: ghostwhite;
 }
-
 .image {
   width: 25%;
 }
@@ -63,26 +63,61 @@ export default {};
   max-width: 400px;
 }
 
-.babies,
-.toddlers,
-.aftercare,
-.extra-mural {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
+/* Average Devices */
+@media only screen and (min-width: 770px) and (max-width: 1000px) {
+  .holder {
+    min-height: 40vh;
+    background-repeat: no-repeat;
+  }
 
-.grade-img {
-  width: 75%;
-  height: 70%;
-}
+  .p-holder {
+    flex-direction: column;
+  }
 
-.grade-text {
-  width: 250px;
-  text-align: center;
-}
+  .text {
+    max-width: 90%;
+  }
 
-.class-holder {
-  display: flex;
+  .image {
+    width: 70%;
+  }
+}
+/* Medium Devices */
+@media only screen and (min-width: 600px) and (max-width: 800px) {
+  .holder {
+    min-height: 40vh;
+    background-repeat: no-repeat;
+  }
+
+  .p-holder {
+    flex-direction: column;
+  }
+
+  .text {
+    max-width: 90%;
+  }
+
+  .image {
+    width: 90%;
+  }
+}
+/* Small devices */
+@media only screen and (max-width: 600px) {
+  .holder {
+    min-height: 40vh;
+    background-repeat: no-repeat;
+  }
+  .p-holder {
+    min-height: 30vh;
+    flex-direction: column;
+  }
+
+  .text {
+    max-width: 95%;
+  }
+
+  .image {
+    width: 95%;
+  }
 }
 </style>

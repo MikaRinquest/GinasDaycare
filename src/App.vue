@@ -57,4 +57,30 @@ nav a {
 nav a.router-link-exact-active {
   color: white;
 }
+
+/* Medium Devices*/
+@media only screen and (min-width: 600px) and (max-width: 1000px) {
+  h1,
+  h2,
+  h3 {
+    font-size: 30px;
+  }
+
+  p {
+    font-size: 24px;
+  }
+}
+
+/* Small Devices*/
+@media only screen and (max-width: 600px) {
+  h1,
+  h2,
+  h3 {
+    font-size: 26px;
+  }
+
+  p {
+    font-size: 20px;
+  }
+}
 </style>

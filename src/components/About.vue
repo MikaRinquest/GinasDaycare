@@ -142,4 +142,77 @@ export default {
 p + img:nth-child(2) {
   transform: rotate(5deg);
 }
+
+/* Average Devices */
+@media only screen and (min-width: 770px) and (max-width: 1000px) {
+  #about-holder {
+    background-repeat: repeat-y;
+  }
+
+  .p-holder1,
+  .p-holder2 {
+    flex-direction: column;
+  }
+
+  .title {
+    text-align: center;
+  }
+
+  .text {
+    max-width: 98%;
+    text-align: center;
+  }
+
+  .image {
+    width: 60%;
+  }
+}
+/* Medium Devices */
+@media only screen and (min-width: 600px) and (max-width: 800px) {
+  #about-holder {
+    background-repeat: repeat-y;
+  }
+
+  .p-holder1,
+  .p-holder2 {
+    flex-direction: column;
+  }
+
+  .title {
+    text-align: center;
+  }
+
+  .text {
+    max-width: 98%;
+    text-align: center;
+  }
+
+  .image {
+    width: 50%;
+  }
+}
+/* Small devices */
+@media only screen and (max-width: 600px) {
+  #about-holder {
+    background-repeat: repeat-y;
+  }
+
+  .p-holder1,
+  .p-holder2 {
+    flex-direction: column;
+  }
+
+  .title {
+    text-align: center;
+  }
+
+  .text {
+    max-width: 98%;
+    text-align: center;
+  }
+
+  .image {
+    width: 55%;
+  }
+}
 </style>
