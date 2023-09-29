@@ -73,7 +73,7 @@
               <input
                 type="email"
                 name="email"
-                v-model="email"
+                v-model="address"
                 placeholder="Email address"
                 class="input"
                 required
@@ -82,7 +82,7 @@
               <input
                 type="tel"
                 name="phone"
-                v-model="phone"
+                v-model="tel"
                 placeholder="Phone number"
                 maxlength="10"
                 class="input"
@@ -99,7 +99,7 @@
               ></textarea>
             </div>
             <div class="input-holder">
-              <button type="submit" class="button">SUBMIT</button>
+              <button type="submit" class="button" @click="send">SUBMIT</button>
             </div>
           </form>
         </div>
@@ -116,10 +116,9 @@ export default {
     return {
       name: "",
       surname: "",
-      email: "",
-      phone: "",
+      address: "",
+      tel: "",
       message: "",
-      name: "",
       slides: [
         {
           id: "1",
@@ -139,6 +138,19 @@ export default {
   components: {
     Carousel,
     Slide,
+  },
+
+  methods: {
+    send() {
+      const emailBody = {
+        name: this.name,
+        surname: this.surname,
+        address: this.address,
+        tel: this.tel,
+        message: this.message,
+      };
+      return this.$store.dispatch("sendEmail", emailBody);
+    },
   },
 };
 </script>
