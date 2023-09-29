@@ -1,6 +1,11 @@
 <template>
   <section>
-    <Carousel :autoplay="2000" :items-to-show="5" :wrap-around="true">
+    <Carousel
+      :autoplay="2000"
+      :breakpoints="breakpoints"
+      :wrap-around="true"
+      :items-to-show="1"
+    >
       <Slide v-for="slide in slides" :key="slide.id">
         <div class="contact-img">
           <img :src="slide.img" class="img" />
@@ -117,8 +122,18 @@
 import "vue3-carousel/dist/carousel.css";
 import { Carousel, Slide } from "vue3-carousel";
 export default {
+  name: "Breakpoints",
   data() {
     return {
+      //carousel breakpoints
+      breakpoints: {
+        700: {
+          itemsToShow: 3,
+        },
+        1000: {
+          itemsToShow: 5,
+        },
+      },
       name: "",
       surname: "",
       address: "",
@@ -289,6 +304,9 @@ export default {
     height: 50px;
   }
 
+  .op-holder {
+    flex-direction: column;
+  }
   .map {
     align-self: center;
   }
