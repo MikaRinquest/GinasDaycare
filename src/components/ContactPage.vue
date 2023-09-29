@@ -25,26 +25,31 @@
             </span>
             <span class="span">
               <fa :icon="['fas', 'clock']" class="icon" />
-              <p class="contact-info">
-                Operating hours: Mon - Thurs 06:30 - 17:00
-              </p>
-              <p class="contact-info">Operating hours: Fridays 06:30 - 16:00</p>
+              <div class="op-holder">
+                <p class="contact-info">
+                  Operating hours: Mon - Thurs 06:30 - 17:00
+                </p>
+                <p class="contact-info">
+                  Operating hours: Fridays 06:30 - 16:00
+                </p>
+              </div>
             </span>
-          </div>
-          <div class="map-holder">
-            <span class="span">
-              <fa :icon="[fas, 'location-dot']" class="icon" />
-              <p class="contact-info">Come find us</p>
-            </span>
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3312.6595071098363!2d18.723184975400372!3d-33.87266491925846!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1dcc536c01e2579b%3A0x8075589bd9bc99ba!2sGina%20DayCare!5e0!3m2!1sen!2sza!4v1695104469361!5m2!1sen!2sza"
-              width="300"
-              height="250"
-              style="border: 0"
-              allowfullscreen=""
-              loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade"
-            ></iframe>
+            <div>
+              <span class="span">
+                <fa :icon="[fas, 'location-dot']" class="icon" />
+                <p class="contact-info">Come find us</p>
+              </span>
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3312.6595071098363!2d18.723184975400372!3d-33.87266491925846!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1dcc536c01e2579b%3A0x8075589bd9bc99ba!2sGina%20DayCare!5e0!3m2!1sen!2sza!4v1695104469361!5m2!1sen!2sza"
+                width="300"
+                height="250"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+                class="map"
+              ></iframe>
+            </div>
           </div>
         </div>
         <div class="form-holder">
@@ -200,12 +205,8 @@ export default {
   font-size: 25px;
 }
 
-.map-holder {
+.op-holder {
   display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: flex-start;
-  padding-left: 10%;
 }
 
 .contact-holder,
@@ -251,5 +252,91 @@ export default {
   background-color: #00b055;
   color: white;
   border: none;
+}
+
+/* Medium Devices */
+@media only screen and (min-width: 600px) and (max-width: 1000px) {
+  .info-holder {
+    flex-direction: column-reverse;
+  }
+
+  .contact-holder,
+  .form-holder {
+    width: 100%;
+  }
+
+  .form,
+  .input-holder {
+    width: 100%;
+  }
+  .input-holder {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .input {
+    width: 70%;
+    height: 50px;
+    font-size: 20px;
+  }
+
+  .textbox {
+    font-size: 20px;
+  }
+
+  .button {
+    font-size: 20px;
+    height: 50px;
+  }
+
+  .map {
+    align-self: center;
+  }
+}
+/* Small devices */
+@media only screen and (max-width: 600px) {
+  .info-holder {
+    flex-direction: column-reverse;
+  }
+
+  .contact-holder,
+  .form-holder {
+    width: 100%;
+  }
+
+  .form,
+  .input-holder {
+    width: 100%;
+  }
+  .input-holder {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .input {
+    width: 70%;
+    height: 45px;
+    font-size: 16px;
+  }
+
+  .textbox {
+    font-size: 16px;
+  }
+
+  .button {
+    font-size: 16px;
+    height: 45px;
+  }
+
+  .contact-info {
+    font-size: 16px;
+  }
+
+  .op-holder {
+    flex-direction: column;
+  }
+  .map {
+    align-self: center;
+  }
 }
 </style>

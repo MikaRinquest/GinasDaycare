@@ -20,8 +20,10 @@
       </div>
     </div>
     <div class="meal-program">
-      <h2>Meal Plan, Stationary List & Extra Mural Activities</h2>
-      <p>
+      <h2 class="exp-title">
+        Meal Plan, Stationary List & Extra Mural Activities
+      </h2>
+      <p class="exp">
         Click the buttons below to download a copy of our Meal Plan,Stationary
         List or Extra Mural Activities for the kids.
       </p>
@@ -122,11 +124,7 @@ export default {
 .grade-img {
   width: 75%;
   height: 70%;
-  /* border: solid 2px;
-  border-bottom-color: #ffe;
-  border-left-color: #eed;
-  border-right-color: #eed;
-  border-top-color: #ccb; */
+  margin-top: 5px;
 }
 
 .grade-text {
@@ -137,20 +135,6 @@ export default {
 
 .class-holder {
   display: flex;
-}
-
-.p-holder {
-  max-width: 100vw;
-  display: flex;
-  justify-content: space-around;
-}
-
-.text {
-  max-width: 500px;
-}
-
-.image {
-  width: 25%;
 }
 
 .meal-program {
@@ -179,5 +163,80 @@ export default {
   padding: 15px;
   align-items: center;
   font-weight: 600;
+}
+
+/* Medium Devices */
+@media only screen and (min-width: 600px) and (max-width: 1000px) {
+  .class-holder {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .classes {
+    width: 65%;
+    margin-bottom: 11px;
+  }
+
+  .grade-img {
+    width: 60%;
+  }
+
+  .download-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .exp-title {
+    text-align: Center;
+  }
+
+  .exp {
+    text-align: center;
+  }
+
+  .download {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-size: 27px;
+    margin-bottom: 1%;
+  }
+}
+/* Small devices */
+@media only screen and (max-width: 600px) {
+  .class-holder {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .classes {
+    width: 65%;
+    margin-bottom: 11px;
+  }
+
+  .grade-img {
+    width: 60%;
+  }
+
+  .download-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .exp-title {
+    text-align: Center;
+  }
+
+  .exp {
+    text-align: center;
+  }
+
+  .download {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-size: 15px;
+    margin-bottom: 1%;
+  }
 }
 </style>

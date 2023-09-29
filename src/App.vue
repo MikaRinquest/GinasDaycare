@@ -29,7 +29,7 @@ h1,
 h2,
 h3 {
   font-family: "SassoonPrimary", Helvetica, Arial;
-  font-weight: 500;
+  font-weight: 600;
   font-size: 25px;
 }
 
@@ -63,11 +63,11 @@ nav a.router-link-exact-active {
   h1,
   h2,
   h3 {
-    font-size: 30px;
+    font-size: 45px;
   }
 
   p {
-    font-size: 24px;
+    font-size: 27px;
   }
 }
 
