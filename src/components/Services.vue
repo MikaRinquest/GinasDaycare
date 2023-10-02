@@ -1,5 +1,5 @@
 <template>
-  <section id="services-holder">
+  <section id="services">
     <div class="age-group">
       <h2 class="class-title">Our Classes</h2>
       <div class="class-holder">
@@ -94,11 +94,12 @@ export default {
 </script>
 
 <style scoped>
-#services-holder {
+#services {
   padding-left: 2%;
 }
 .class-title {
   text-align: center;
+  margin-bottom: 5%;
 }
 
 .class-holder > div {
@@ -135,6 +136,11 @@ export default {
 
 .class-holder {
   display: flex;
+}
+
+.exp {
+  margin-top: 5%;
+  margin-bottom: 5%;
 }
 
 .meal-program {

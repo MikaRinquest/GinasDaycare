@@ -1,5 +1,5 @@
 <template>
-  <section id="about-holder">
+  <section id="about">
     <div class="vision">
       <div class="p-holder1">
         <div>
@@ -10,7 +10,11 @@
           </p>
         </div>
         <transition appear @before-enter="beforeEnter" @enter="enter">
-          <img src="https://i.postimg.cc/zX7m6qbZ/Pic-1.jpg" class="image" />
+          <img
+            src="https://i.postimg.cc/zX7m6qbZ/Pic-1.jpg"
+            class="image"
+            alt="Our vision"
+          />
         </transition>
       </div>
     </div>
@@ -30,7 +34,11 @@
           @before-enter="beforeEnterMission"
           @enter="enterMission"
         >
-          <img src="https://i.postimg.cc/c40yFvJB/Pic-2.jpg" class="image" />
+          <img
+            src="https://i.postimg.cc/c40yFvJB/Pic-2.jpg"
+            class="image"
+            alt="Our mission"
+          />
         </transition>
       </div>
     </div>
@@ -39,8 +47,8 @@
 
 <script>
 import { gsap, DrawSVGPlugin } from "gsap/all";
-import ScrollTrigger from "gsap/ScrollTrigger";
-gsap.registerPlugin(ScrollTrigger);
+// import ScrollTrigger from "gsap/ScrollTrigger";
+// gsap.registerPlugin(ScrollTrigger);
 export default {
   methods: {
     beforeEnter(el) {
@@ -85,7 +93,7 @@ export default {
 </script>
 
 <style scoped>
-#about-holder {
+#about {
   padding-left: 2%;
   background-image: linear-gradient(
       0deg,
@@ -109,6 +117,8 @@ export default {
 
 .image {
   width: 35%;
+  margin-top: 5%;
+  margin-bottom: 5%;
 }
 
 .p-holder1,
@@ -145,7 +155,7 @@ p + img:nth-child(2) {
 
 /* Average Devices */
 @media only screen and (min-width: 770px) and (max-width: 1000px) {
-  #about-holder {
+  #about {
     background-repeat: repeat-y;
   }
 
@@ -169,7 +179,7 @@ p + img:nth-child(2) {
 }
 /* Medium Devices */
 @media only screen and (min-width: 600px) and (max-width: 800px) {
-  #about-holder {
+  #about {
     background-repeat: repeat-y;
   }
 

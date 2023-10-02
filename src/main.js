@@ -17,10 +17,22 @@ import {
   faEnvelope,
   faLocationDot,
   faClock,
+  faCopyright,
+  faX,
+  faBars,
 } from "@fortawesome/free-solid-svg-icons"; //This only lets us use solid icons (free version)
 import { faTwitter } from "@fortawesome/free-brands-svg-icons"; //This only lets us use brand icons (free version)
 
-library.add(faPhone, faEnvelope, faTwitter, faLocationDot, faClock);
+library.add(
+  faPhone,
+  faEnvelope,
+  faTwitter,
+  faLocationDot,
+  faClock,
+  faCopyright,
+  faX,
+  faBars
+);
 
 createApp(App)
   .component("fa", FontAwesomeIcon)

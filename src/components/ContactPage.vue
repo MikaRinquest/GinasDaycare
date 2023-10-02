@@ -1,10 +1,10 @@
 <template>
-  <section>
+  <section id="contact">
     <Carousel
       :autoplay="2000"
       :breakpoints="breakpoints"
       :wrap-around="true"
-      :items-to-show="1"
+      :items-to-show="1.5"
     >
       <Slide v-for="slide in slides" :key="slide.id">
         <div class="contact-img">
@@ -39,22 +39,22 @@
                 </p>
               </div>
             </span>
-            <div>
-              <span class="span">
-                <fa :icon="[fas, 'location-dot']" class="icon" />
-                <p class="contact-info">Come find us</p>
-              </span>
-              <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3312.6595071098363!2d18.723184975400372!3d-33.87266491925846!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1dcc536c01e2579b%3A0x8075589bd9bc99ba!2sGina%20DayCare!5e0!3m2!1sen!2sza!4v1695104469361!5m2!1sen!2sza"
-                width="300"
-                height="250"
-                style="border: 0"
-                allowfullscreen=""
-                loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"
-                class="map"
-              ></iframe>
-            </div>
+          </div>
+          <div class="map-holder">
+            <span class="span">
+              <fa :icon="[fas, 'location-dot']" class="icon" />
+              <p class="contact-info">Come find us</p>
+            </span>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3312.6595071098363!2d18.723184975400372!3d-33.87266491925846!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1dcc536c01e2579b%3A0x8075589bd9bc99ba!2sGina%20DayCare!5e0!3m2!1sen!2sza!4v1695104469361!5m2!1sen!2sza"
+              width="300"
+              height="250"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              class="map"
+            ></iframe>
           </div>
         </div>
         <div class="form-holder">
@@ -128,7 +128,7 @@ export default {
       //carousel breakpoints
       breakpoints: {
         700: {
-          itemsToShow: 3,
+          itemsToShow: 3.5,
         },
         1000: {
           itemsToShow: 5,
@@ -220,6 +220,13 @@ export default {
   font-size: 25px;
 }
 
+.map-holder {
+  display: flex;
+  flex-direction: column;
+  padding-left: 10%;
+  padding-bottom: 2%;
+}
+
 .op-holder {
   display: flex;
 }
@@ -278,6 +285,7 @@ export default {
   .contact-holder,
   .form-holder {
     width: 100%;
+    padding-bottom: 5%;
   }
 
   .form,
@@ -303,12 +311,12 @@ export default {
     font-size: 20px;
     height: 50px;
   }
-
-  .op-holder {
-    flex-direction: column;
-  }
   .map {
     align-self: center;
+  }
+
+  .span {
+    padding-bottom: 20px;
   }
 }
 /* Small devices */
@@ -344,6 +352,10 @@ export default {
   .button {
     font-size: 16px;
     height: 45px;
+  }
+
+  .span {
+    padding-top: 15px;
   }
 
   .contact-info {

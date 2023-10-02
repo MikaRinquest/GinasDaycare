@@ -1,34 +1,38 @@
 <template>
   <nav id="nav">
     <div class="nav-holder">
-      <router-link class="route-name" to="/">Home</router-link>
-      <router-link class="route-name" to="/about">About</router-link>
-      <router-link class="route-name" to="/services">Services</router-link>
-      <router-link class="route-name" to="/contact">Contact Us</router-link>
+      <router-link class="route-name" to="/" @click="toggle = !toggle"
+        >Home</router-link
+      >
+      <router-link class="route-name" to="/about" @click="toggle = !toggle"
+        >About</router-link
+      >
+      <router-link class="route-name" to="/services" @click="toggle = !toggle"
+        >Services</router-link
+      >
+      <router-link class="route-name" to="/contact" @click="toggle = !toggle"
+        >Contact Us</router-link
+      >
     </div>
   </nav>
-  <router-view />
-  <!-- <router-view v-slot="{ Component }">
-    <transition name="route" mode="out-in">
-      <component :is="Component"></component>
-    </transition>
-  </router-view> -->
 </template>
 
 <script>
 export default {};
 </script>
 
-<style>
+<style scoped>
 #nav {
-  width: 94vw;
+  width: 100vw;
+  height: 10%;
   display: flex;
   justify-content: center;
   box-shadow: 5px 5px 10px #828282, -5px -5px 10px #ffffff;
   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
     url("https://i.postimg.cc/13mTT3Zj/nav-2-1-2.pngg");
   background-size: contain;
-  z-index: 100000;
+  z-index: 10;
+  position: fixed;
 }
 
 .nav-holder {
@@ -45,22 +49,10 @@ export default {};
   color: white;
 }
 
-/* router transitions */
-/* .route-enter-from {
-  opacity: 0;
-  transform: translateX(100px);
+/* Media queries */
+@media only screen and (max-width: 1000px) {
+  #nav {
+    display: none;
+  }
 }
-
-.route-enter-active {
-  transition: all 0.2s ease-out;
-}
-
-.route-leave-to {
-  opacity: 0;
-  transform: translateX(-100px);
-}
-
-.route-leave-active {
-  transition: all 0.2s ease-in;
-} */
 </style>

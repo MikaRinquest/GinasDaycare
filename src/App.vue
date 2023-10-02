@@ -1,12 +1,19 @@
 <template>
   <Navbar />
+  <MobileNav />
+  <router-view></router-view>
+  <Footer />
 </template>
 
 <script>
 import Navbar from "./components/Navbar.vue";
+import MobileNav from "./components/MobileNav.vue";
+import Footer from "./components/Footer.vue";
 export default {
   components: {
     Navbar,
+    MobileNav,
+    Footer,
   },
 };
 </script>
@@ -19,6 +26,12 @@ export default {
   font-family: "ComicSans";
   src: local("ComicSans"),
     url(./assets/fonts/LDFComicSans.ttf) format("truetype");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
@@ -38,10 +51,14 @@ p {
   font-size: 18px;
 }
 
+#landing,
+#about,
+#services,
+#contact {
+  padding-top: 5%;
+}
+
 #app {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
   height: 100vh;
 }
 
@@ -69,6 +86,13 @@ nav a.router-link-exact-active {
   p {
     font-size: 27px;
   }
+
+  #landing,
+  #about,
+  #services,
+  #contact {
+    padding-top: 0%;
+  }
 }
 
 /* Small Devices*/
@@ -82,5 +106,31 @@ nav a.router-link-exact-active {
   p {
     font-size: 20px;
   }
+
+  #landing,
+  #about,
+  #services,
+  #contact {
+    padding-top: 0%;
+  }
 }
+
+/* router transitions */
+/* .route-enter-from {
+  opacity: 0;
+  transform: translateX(100px);
+}
+
+.route-enter-active {
+  transition: all 0.2s ease-out;
+}
+
+.route-leave-to {
+  opacity: 0;
+  transform: translateX(-100px);
+}
+
+.route-leave-active {
+  transition: all 0.2s ease-in;
+} */
 </style>

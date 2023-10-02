@@ -1,5 +1,5 @@
 <template>
-  <section class="section">
+  <section id="landing">
     <div class="holder">
       <div class="title-holder"></div>
     </div>
@@ -15,7 +15,11 @@
               illo libero dignissimos praesentium officiis voluptatum?
             </p>
           </div>
-          <img src="https://i.postimg.cc/VsnNqq0G/Pic-4.jpg" class="image" />
+          <img
+            src="https://i.postimg.cc/VsnNqq0G/Pic-4.jpg"
+            class="image"
+            alt="Our history"
+          />
         </div>
       </div>
     </div>
@@ -61,6 +65,8 @@ export default {};
 
 .text {
   max-width: 400px;
+  padding-top: 5%;
+  padding-bottom: 5%;
 }
 
 /* Average Devices */
