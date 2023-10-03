@@ -14,7 +14,6 @@ export default {};
 <style scoped>
 .footer {
   background-color: #acac9a;
-  margin-top: 2%;
 }
 
 .copyright-holder {

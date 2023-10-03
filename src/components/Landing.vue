@@ -61,6 +61,7 @@ export default {};
   justify-content: space-around;
   align-items: center;
   margin-top: 1%;
+  margin-bottom: 1%;
 }
 
 .text {

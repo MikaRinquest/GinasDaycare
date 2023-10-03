@@ -209,6 +209,7 @@ export default {
   align-items: center;
   font-size: 18px;
   font-weight: 600;
+  padding-bottom: 20px;
 }
 
 .contact-info {
@@ -224,6 +225,7 @@ export default {
   display: flex;
   flex-direction: column;
   padding-left: 10%;
+  padding-top: 2%;
   padding-bottom: 2%;
 }
 
@@ -234,6 +236,7 @@ export default {
 .contact-holder,
 .form-holder {
   width: 50%;
+  margin-bottom: 2%;
 }
 
 .form {
@@ -313,10 +316,6 @@ export default {
   }
   .map {
     align-self: center;
-  }
-
-  .span {
-    padding-bottom: 20px;
   }
 }
 /* Small devices */
