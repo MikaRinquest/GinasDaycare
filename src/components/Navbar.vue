@@ -27,10 +27,8 @@ export default {};
   height: 10%;
   display: flex;
   justify-content: center;
-  box-shadow: 5px 5px 10px #828282, -5px -5px 10px #ffffff;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-    url("https://i.postimg.cc/13mTT3Zj/nav-2-1-2.pngg");
-  background-size: contain;
+  background-color: white;
+  box-shadow: 10px 10px 20px #5a5a5a, -10px -10px 20px #ffffff;
   z-index: 10;
   position: fixed;
 }
@@ -46,7 +44,7 @@ export default {};
   font-size: 18px;
   text-transform: uppercase;
   font-weight: 500;
-  color: white;
+  color: black;
 }
 
 /* Media queries */

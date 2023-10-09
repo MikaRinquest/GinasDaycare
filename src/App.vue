@@ -35,7 +35,7 @@ export default {
 }
 
 body {
-  background-color: beige;
+  background-color: #dadde2;
 }
 
 h1,

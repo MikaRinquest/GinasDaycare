@@ -116,9 +116,9 @@ export default {
 }
 
 .image {
-  width: 35%;
+  width: 25%;
   margin-top: 5%;
-  margin-bottom: 5%;
+  margin-bottom: 3%;
 }
 
 .p-holder1,
@@ -127,8 +127,6 @@ export default {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  padding-top: 2%;
-  padding-bottom: 2%;
 }
 
 .mission-title {
@@ -151,6 +149,7 @@ export default {
 
 p + img:nth-child(2) {
   transform: rotate(5deg);
+  margin-bottom: 5%;
 }
 
 /* Average Devices */

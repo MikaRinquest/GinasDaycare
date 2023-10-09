@@ -100,13 +100,54 @@
                 autocomplete="on"
               />
             </div>
-            <div class="input-holder">
-              <textarea
-                name="message"
-                v-model="message"
-                placeholder="Please give a description on what you would like."
-                class="textbox"
-              ></textarea>
+
+            <h3 class="select">
+              Please select what you are interested in below:
+            </h3>
+            <div class="checkbox-holder">
+              <span class="checkbox">
+                <input
+                  type="checkbox"
+                  name="babies"
+                  class="check"
+                  value="Ages 0 - 3"
+                  v-model="assist"
+                />
+                <label class="label" for="babies">Ages 0 - 3</label>
+              </span>
+              <span class="checkbox">
+                <input
+                  type="checkbox"
+                  name="toddler"
+                  class="check"
+                  value="Ages 3 - 6"
+                  v-model="assist"
+                />
+                <label class="label" for="toddler">Ages 3 - 6</label>
+              </span>
+            </div>
+
+            <div class="checkbox-holder">
+              <span class="checkbox">
+                <input
+                  type="checkbox"
+                  name="aftercare"
+                  class="check"
+                  value="Aftercare"
+                  v-model="assist"
+                />
+                <label class="label" for="aftercare">Aftercare</label>
+              </span>
+              <span class="checkbox">
+                <input
+                  type="checkbox"
+                  name="extra"
+                  class="check"
+                  value="Extra Mural"
+                  v-model="assist"
+                />
+                <label class="label" for="extra">Extra Mural Activities</label>
+              </span>
             </div>
             <div class="input-holder">
               <button type="submit" class="button" @click="send">SUBMIT</button>
@@ -138,7 +179,7 @@ export default {
       surname: "",
       address: "",
       tel: "",
-      message: "",
+      assist: [],
       slides: [
         {
           id: "1",
@@ -167,8 +208,9 @@ export default {
         surname: this.surname,
         address: this.address,
         tel: this.tel,
-        message: this.message,
+        assist: this.assist,
       };
+      // console.log(emailBody);
       return this.$store.dispatch("sendEmail", emailBody);
     },
   },
@@ -257,16 +299,30 @@ export default {
   font-size: 15px;
 }
 
-.textbox {
-  width: 70%;
-  height: 60px;
-  font-size: 15px;
+.select {
+  font-size: 20px;
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
 
-.input,
-.textbox {
+.input {
   border: none;
   border-radius: 5px;
+}
+
+.checkbox-holder {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.checkbox {
+  transform: scale(1.5);
+  width: 25%;
+  margin-top: 10px;
+}
+
+.label {
+  font-size: 15px;
 }
 
 .button {
