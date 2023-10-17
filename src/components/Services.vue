@@ -61,7 +61,8 @@ export default {
         {
           id: "3",
           age: "Aftercare",
-          image: "https://i.postimg.cc/j5fxTfxX/aftercare.jpg",
+          image:
+            "https://i.postimg.cc/cJXksV41/Whats-App-Image-2023-10-17-at-10-08-35.jpg",
           extra: "",
         },
         {
@@ -99,7 +100,8 @@ export default {
 }
 .class-title {
   text-align: center;
-  margin-bottom: 5%;
+  margin-bottom: 3%;
+  margin-top: 3%;
 }
 
 .class-holder > div {

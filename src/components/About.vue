@@ -36,7 +36,7 @@
         >
           <img
             src="https://i.postimg.cc/c40yFvJB/Pic-2.jpg"
-            class="image"
+            class="image mission-img"
             alt="Our mission"
           />
         </transition>
@@ -46,9 +46,7 @@
 </template>
 
 <script>
-import { gsap, DrawSVGPlugin } from "gsap/all";
-// import ScrollTrigger from "gsap/ScrollTrigger";
-// gsap.registerPlugin(ScrollTrigger);
+import { gsap } from "gsap/all";
 export default {
   methods: {
     beforeEnter(el) {
@@ -75,10 +73,6 @@ export default {
 
     enterMission(el, done) {
       gsap.to(el, {
-        scrollTrigger: {
-          trigger: el,
-          toggleActions: "restart none none none",
-        },
         duration: 1.5,
         x: 0,
         opacity: 1,
@@ -117,7 +111,10 @@ export default {
 
 .image {
   width: 25%;
-  margin-top: 5%;
+  margin-top: 4%;
+}
+
+.mission-img {
   margin-bottom: 3%;
 }
 
@@ -145,11 +142,6 @@ export default {
 
 .text-end {
   text-align: end;
-}
-
-p + img:nth-child(2) {
-  transform: rotate(5deg);
-  margin-bottom: 5%;
 }
 
 /* Average Devices */

@@ -102,7 +102,7 @@
             </div>
 
             <h3 class="select">
-              Please select what you are interested in below:
+              Please tick which Age Group you are applying for in below:
             </h3>
             <div class="checkbox-holder">
               <span class="checkbox">
@@ -110,7 +110,7 @@
                   type="checkbox"
                   name="babies"
                   class="check"
-                  value="Ages 0 - 3"
+                  value=" Ages 0 - 3 Class"
                   v-model="assist"
                 />
                 <label class="label" for="babies">Ages 0 - 3</label>
@@ -120,7 +120,7 @@
                   type="checkbox"
                   name="toddler"
                   class="check"
-                  value="Ages 3 - 6"
+                  value=" Ages 3 - 6 Class"
                   v-model="assist"
                 />
                 <label class="label" for="toddler">Ages 3 - 6</label>
@@ -133,7 +133,7 @@
                   type="checkbox"
                   name="aftercare"
                   class="check"
-                  value="Aftercare"
+                  value=" Aftercare"
                   v-model="assist"
                 />
                 <label class="label" for="aftercare">Aftercare</label>
@@ -143,7 +143,7 @@
                   type="checkbox"
                   name="extra"
                   class="check"
-                  value="Extra Mural"
+                  value=" Extra Mural Class"
                   v-model="assist"
                 />
                 <label class="label" for="extra">Extra Mural Activities</label>
@@ -208,7 +208,7 @@ export default {
         surname: this.surname,
         address: this.address,
         tel: this.tel,
-        assist: this.assist,
+        message: this.assist,
       };
       // console.log(emailBody);
       return this.$store.dispatch("sendEmail", emailBody);
@@ -326,13 +326,19 @@ export default {
 }
 
 .button {
-  width: 25%;
+  width: 22%;
   height: 30px;
   margin-top: 10px;
   font-size: 15px;
-  background-color: #00b055;
+  background-color: #008956;
   color: white;
   border: none;
+  border-radius: 10px;
+}
+
+.button:hover {
+  cursor: pointer;
+  background-color: #42aa6e;
 }
 
 /* Medium Devices */

@@ -4,7 +4,7 @@
     <div class="landing">
       <span class="title-holder">
         <h2 class="quote">
-          "Lorem ipsum dolor, sit amet consectetur adipisicing elit."
+          "A good Daycare is like a second home for children."
         </h2>
         <p>- Owner</p>
       </span>
@@ -15,40 +15,48 @@
       />
     </div>
     <h1>Our History</h1>
+
     <div class="tl">
-      <div class="tl-container tl-left">
-        <div class="tl-content">
-          <h2>2017</h2>
-          <p>
-            Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec
-            admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea quis
-            iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto
-            primis ea eam.
-          </p>
+      <transition @before-enter="beforeEnterLeft" @enter="enterLeft">
+        <div class="tl-container tl-left">
+          <div class="tl-content">
+            <h2>2017</h2>
+            <p>
+              Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec
+              admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea
+              quis iuvaret expetendis his, te elit voluptua dignissim per, habeo
+              iusto primis ea eam.
+            </p>
+          </div>
         </div>
-      </div>
-      <div class="tl-container tl-right">
-        <div class="tl-content">
-          <h2>2016</h2>
-          <p>
-            Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec
-            admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea quis
-            iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto
-            primis ea eam.
-          </p>
+      </transition>
+      <transition @before-enter="beforeEnterRight" @enter="enter">
+        <div class="tl-container tl-right">
+          <div class="tl-content">
+            <h2>2016</h2>
+            <p>
+              Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec
+              admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea
+              quis iuvaret expetendis his, te elit voluptua dignissim per, habeo
+              iusto primis ea eam.
+            </p>
+          </div>
         </div>
-      </div>
-      <div class="tl-container tl-left">
-        <div class="tl-content">
-          <h2>2015</h2>
-          <p>
-            Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec
-            admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea quis
-            iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto
-            primis ea eam.
-          </p>
+      </transition>
+      <transition @before-enter="beforeEnterLeft" @enter="enter">
+        <div class="tl-container tl-left">
+          <div class="tl-content">
+            <h2>2015</h2>
+            <p>
+              Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec
+              admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea
+              quis iuvaret expetendis his, te elit voluptua dignissim per, habeo
+              iusto primis ea eam.
+            </p>
+          </div>
         </div>
-      </div>
+      </transition>
+      <!-- <transition @before-enter="beforeEnterRight" @enter="enter"> -->
       <div class="tl-container tl-right">
         <div class="tl-content">
           <h2>2012</h2>
@@ -60,17 +68,21 @@
           </p>
         </div>
       </div>
-      <div class="tl-container tl-left">
-        <div class="tl-content">
-          <h2>2011</h2>
-          <p>
-            Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec
-            admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea quis
-            iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto
-            primis ea eam.
-          </p>
+      <!-- </transition> -->
+      <transition @before-enter="beforeEnterLeft" @enter="enter">
+        <div class="tl-container tl-left">
+          <div class="tl-content">
+            <h2>2011</h2>
+            <p>
+              Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec
+              admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea
+              quis iuvaret expetendis his, te elit voluptua dignissim per, habeo
+              iusto primis ea eam.
+            </p>
+          </div>
         </div>
-      </div>
+      </transition>
+      <!-- <transition @before-enter="beforeEnterRight" @enter="enter"> -->
       <div class="tl-container tl-right">
         <div class="tl-content">
           <h2>2007</h2>
@@ -82,12 +94,35 @@
           </p>
         </div>
       </div>
+      <!-- </transition> -->
     </div>
   </section>
 </template>
 
 <script>
-export default {};
+import gsap from "gsap";
+// gsap.registerPlugin(ScrollTrigger);
+export default {
+  methods: {
+    beforeEnterLeft(el) {
+      el.style.transform = "translateX(-100px)";
+      el.style.opacity = 0;
+      console.log("Before");
+    },
+  },
+  beforeEnterRight(el) {
+    el.style.transform = "translateX(100px)";
+    el.style.opacity = 0;
+  },
+
+  enterLeft(el) {
+    gsap.to(el, {
+      duration: 3,
+      x: 0,
+      opacity: 1,
+    });
+  },
+};
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
