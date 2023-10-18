@@ -165,7 +165,7 @@ export default {
   border: 1px solid white;
   text-decoration: none;
   color: black;
-  background-color: burlywood;
+  background-color: #95adcf;
   height: 20%;
   border-radius: 7px;
   padding: 15px;

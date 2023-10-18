@@ -100,54 +100,56 @@
                 autocomplete="on"
               />
             </div>
-
-            <h3 class="select">
-              Please tick which Age Group you are applying for in below:
-            </h3>
-            <div class="checkbox-holder">
-              <span class="checkbox">
-                <input
-                  type="checkbox"
-                  name="babies"
-                  class="check"
-                  value=" Ages 0 - 3 Class"
-                  v-model="assist"
-                />
-                <label class="label" for="babies">Ages 0 - 3</label>
-              </span>
-              <span class="checkbox">
-                <input
-                  type="checkbox"
-                  name="toddler"
-                  class="check"
-                  value=" Ages 3 - 6 Class"
-                  v-model="assist"
-                />
-                <label class="label" for="toddler">Ages 3 - 6</label>
-              </span>
-            </div>
-
-            <div class="checkbox-holder">
-              <span class="checkbox">
-                <input
-                  type="checkbox"
-                  name="aftercare"
-                  class="check"
-                  value=" Aftercare"
-                  v-model="assist"
-                />
-                <label class="label" for="aftercare">Aftercare</label>
-              </span>
-              <span class="checkbox">
-                <input
-                  type="checkbox"
-                  name="extra"
-                  class="check"
-                  value=" Extra Mural Class"
-                  v-model="assist"
-                />
-                <label class="label" for="extra">Extra Mural Activities</label>
-              </span>
+            <div class="select-holder">
+              <h3 class="select">
+                Please tick which Age Group you are applying for in below:
+              </h3>
+              <div class="checkbox-holder">
+                <span class="checkbox">
+                  <input
+                    type="checkbox"
+                    name="babies"
+                    class="check"
+                    value=" Ages 0 - 3 Class"
+                    v-model="assist"
+                  />
+                  <label class="label" for="babies">Ages 0 - 3</label>
+                </span>
+                <span class="checkbox">
+                  <input
+                    type="checkbox"
+                    name="toddler"
+                    class="check"
+                    value=" Ages 3 - 6 Class"
+                    v-model="assist"
+                  />
+                  <label class="label" for="toddler">Ages 3 - 6</label>
+                </span>
+              </div>
+              <div class="checkbox-holder">
+                <span class="checkbox">
+                  <input
+                    type="checkbox"
+                    name="aftercare"
+                    class="check"
+                    value=" Aftercare"
+                    v-model="assist"
+                  />
+                  <label class="label" for="aftercare">Aftercare</label>
+                </span>
+                <span class="checkbox">
+                  <input
+                    type="checkbox"
+                    name="extra"
+                    class="check"
+                    value=" Extra Mural Class"
+                    v-model="assist"
+                  />
+                  <label class="label" for="extra"
+                    >Extra Mural Activities</label
+                  >
+                </span>
+              </div>
             </div>
             <div class="input-holder">
               <button type="submit" class="button" @click="send">SUBMIT</button>
@@ -292,6 +294,12 @@ export default {
   justify-content: space-evenly;
 }
 
+.select-holder {
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+}
+
 .input {
   margin-bottom: 10px;
   width: 40%;
@@ -303,6 +311,9 @@ export default {
   font-size: 20px;
   margin-top: 5px;
   margin-bottom: 5px;
+  text-align: left;
+  width: 80%;
+  padding-left: 5%;
 }
 
 .input {
@@ -313,9 +324,12 @@ export default {
 .checkbox-holder {
   display: flex;
   justify-content: space-evenly;
+  width: 80%;
 }
 
 .checkbox {
+  display: inline-flex;
+  align-items: center;
   transform: scale(1.5);
   width: 25%;
   margin-top: 10px;
@@ -323,6 +337,8 @@ export default {
 
 .label {
   font-size: 15px;
+  padding-left: 5px;
+  padding-bottom: 6px;
 }
 
 .button {
@@ -362,13 +378,13 @@ export default {
     align-items: center;
   }
 
+  .select-holder {
+    align-items: center;
+  }
+
   .input {
     width: 70%;
     height: 50px;
-    font-size: 20px;
-  }
-
-  .textbox {
     font-size: 20px;
   }
 
@@ -400,13 +416,22 @@ export default {
     align-items: center;
   }
 
+  .select-holder {
+    align-items: center;
+  }
+
+  .checkbox-holder {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .checkbox {
+    width: 50%;
+  }
+
   .input {
     width: 70%;
     height: 45px;
-    font-size: 16px;
-  }
-
-  .textbox {
     font-size: 16px;
   }
 
@@ -420,7 +445,7 @@ export default {
   }
 
   .contact-info {
-    font-size: 16px;
+    font-size: 15px;
   }
 
   .op-holder {

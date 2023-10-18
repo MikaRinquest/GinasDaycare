@@ -6,10 +6,9 @@
         <h2 class="quote">
           "A good Daycare is like a second home for children."
         </h2>
-        <p>- Owner</p>
       </span>
       <img
-        src="https://i.postimg.cc/ydF307sx/GinaLogo.jpg"
+        src="https://i.postimg.cc/SR1hqSXC/Trans-Logo.png"
         class="l-image"
         alt="Landing"
       />
@@ -127,16 +126,6 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-.holder {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 85vh;
-  background-image: url("https://i.postimg.cc/C1tnf8pr/landing-i-2.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
 h1 {
   padding-top: 3%;
   padding-bottom: 1%;
@@ -147,7 +136,7 @@ h1 {
 .landing {
   display: flex;
   justify-content: center;
-  margin-top: 1%;
+  margin-top: 5%;
 }
 
 .l-image {
@@ -282,60 +271,44 @@ h1 {
 }
 
 /* Average Devices */
-@media only screen and (min-width: 770px) and (max-width: 1000px) {
-  .holder {
-    min-height: 40vh;
-    background-repeat: no-repeat;
-  }
-
-  .p-holder {
+@media only screen and (min-width: 600px) and (max-width: 1000px) {
+  .landing {
     flex-direction: column;
+    align-items: center;
   }
 
-  .text {
-    max-width: 90%;
+  .title-holder {
+    width: 65%;
   }
 
-  .image {
-    width: 70%;
+  .quote {
+    font-size: 40px;
+    text-align: center;
+  }
+
+  .l-image {
+    width: 50%;
   }
 }
-/* Medium Devices */
-@media only screen and (min-width: 600px) and (max-width: 800px) {
-  .holder {
-    min-height: 40vh;
-    background-repeat: no-repeat;
-  }
 
-  .p-holder {
-    flex-direction: column;
-  }
-
-  .text {
-    max-width: 90%;
-  }
-
-  .image {
-    width: 90%;
-  }
-}
 /* Small devices */
 @media only screen and (max-width: 600px) {
-  .holder {
-    min-height: 40vh;
-    background-repeat: no-repeat;
-  }
-  .p-holder {
-    min-height: 30vh;
+  .landing {
     flex-direction: column;
+    align-items: center;
   }
 
-  .text {
-    max-width: 95%;
+  .title-holder {
+    width: 85%;
   }
 
-  .image {
-    width: 95%;
+  .quote {
+    font-size: 25px;
+    text-align: center;
+  }
+
+  .l-image {
+    width: 75%;
   }
 }
 </style>
