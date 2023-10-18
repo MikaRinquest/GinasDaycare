@@ -57,7 +57,8 @@ h1 {
 }
 
 .l-image {
-  width: 25%;
+  max-width: 350px;
+  height: auto;
 }
 
 .title-holder {

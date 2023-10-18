@@ -110,7 +110,8 @@ export default {
 }
 
 .image {
-  width: 25%;
+  max-width: 350px;
+  height: auto;
   margin-top: 4%;
 }
 

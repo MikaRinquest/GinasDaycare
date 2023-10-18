@@ -101,10 +101,9 @@ export default {
     0 5px 10px 5px rgba(0, 0, 0, 0.25);
   justify-content: center;
 }
-
 .grade-img {
-  width: 75%;
-  height: 70%;
+  max-width: 370px;
+  height: auto;
   margin-top: 5px;
 }
 
