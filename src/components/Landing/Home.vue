@@ -13,6 +13,7 @@
         src="https://i.postimg.cc/rpdsS8xV/Trans-Logo.webp"
         class="l-image"
         alt="Landing"
+        fetchpriority="high"
       />
     </transition>
   </div>
@@ -58,7 +59,7 @@ h1 {
 
 .l-image {
   max-width: 350px;
-  height: auto;
+  aspect-ratio: 1;
 }
 
 .title-holder {
