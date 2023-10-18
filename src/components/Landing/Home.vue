@@ -10,7 +10,7 @@
     </transition>
     <transition appear @before-enter="beforeImage" @enter="enter">
       <img
-        src="https://i.postimg.cc/SR1hqSXC/Trans-Logo.png"
+        src="https://i.postimg.cc/rpdsS8xV/Trans-Logo.webp"
         class="l-image"
         alt="Landing"
       />

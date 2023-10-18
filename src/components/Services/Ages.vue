@@ -30,26 +30,26 @@ export default {
         {
           id: "1",
           age: "0 - 2 years old",
-          image: "https://i.postimg.cc/Gpp4rXCk/Contact-1.png",
+          image: "https://i.postimg.cc/x1MC10rB/Contact-1.webp  ",
           extra: "",
         },
         {
           id: "2",
           age: "3 - 6 years old",
-          image: "https://i.postimg.cc/FHxJt2WR/3-6.jpg",
+          image: "https://i.postimg.cc/mrSg78gw/3-6.webp",
           extra: "",
         },
         {
           id: "3",
           age: "Aftercare",
           image:
-            "https://i.postimg.cc/cJXksV41/Whats-App-Image-2023-10-17-at-10-08-35.jpg",
+            "https://i.postimg.cc/3whwyPYN/Whats-App-Image-2023-10-17-at-10-08-35.webp",
           extra: "",
         },
         {
           id: "4",
           age: "Extra Mural",
-          image: "https://i.postimg.cc/k4Z2D6jD/Extra-mural-new.jpg",
+          image: "https://i.postimg.cc/tTCCkW1H/Extra-mural-new.webp",
           extra: "Computer Kids",
         },
       ],

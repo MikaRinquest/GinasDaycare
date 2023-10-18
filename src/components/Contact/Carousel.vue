@@ -34,15 +34,15 @@ export default {
       slides: [
         {
           id: "1",
-          img: "https://i.postimg.cc/ZqDCq6bX/Contact-2.png",
+          img: "https://i.postimg.cc/1RJDyzmX/Contact-2.webp",
         },
         {
           id: "2",
-          img: "https://i.postimg.cc/cL3XQ4Lz/0-2.jpg",
+          img: "https://i.postimg.cc/4N0thFhT/0-2.webp",
         },
         {
           id: "3",
-          img: "https://i.postimg.cc/76GbJbbh/Contact-3.png",
+          img: "https://i.postimg.cc/SNRCRpRr/Contact-3.webp",
         },
       ],
     };
