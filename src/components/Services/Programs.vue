@@ -44,7 +44,6 @@ export default {};
 .download {
   display: flex;
   font-family: "SassoonPrimary", Helvetica, Arial;
-  border: 1px solid white;
   text-decoration: none;
   color: black;
   background-color: #95adcf;
@@ -53,6 +52,10 @@ export default {};
   padding: 15px;
   align-items: center;
   font-weight: 600;
+}
+
+.download:hover {
+  background-color: #617999;
 }
 
 @media only screen and (min-width: 600px) and (max-width: 1000px) {

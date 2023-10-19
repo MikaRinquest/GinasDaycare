@@ -21,7 +21,6 @@
 
 <script>
 import gsap from "gsap";
-// gsap.registerPlugin(ScrollTrigger);
 export default {
   methods: {
     beforeTitle(el) {

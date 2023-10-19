@@ -89,7 +89,8 @@ export default {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 25%;
+  width: 20%;
+  margin: 10px;
   background-color: #ddc;
   border: solid 5vmin #eee;
   border-bottom-color: #fff;
@@ -103,7 +104,8 @@ export default {
 }
 .grade-img {
   max-width: 370px;
-  height: auto;
+  width: 70%;
+  height: -webkit-fill-available;
   margin-top: 5px;
 }
 

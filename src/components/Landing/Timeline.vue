@@ -1,7 +1,21 @@
 <template>
   <h1>Our History</h1>
   <div class="tl">
-    <div class="tl-container tl-left">
+    <div
+      class="tl-container tl-left"
+      v-motion
+      :initial="{
+        x: -100,
+        opacity: 0,
+      }"
+      :visibleOnce="{
+        x: 0,
+        opacity: 1,
+        transition: {
+          duration: 800,
+        },
+      }"
+    >
       <div class="tl-content">
         <h2>2017</h2>
         <p>
@@ -12,7 +26,21 @@
         </p>
       </div>
     </div>
-    <div class="tl-container tl-right">
+    <div
+      class="tl-container tl-right"
+      v-motion
+      :initial="{
+        x: 100,
+        opacity: 0,
+      }"
+      :visibleOnce="{
+        x: 0,
+        opacity: 1,
+        transition: {
+          duration: 800,
+        },
+      }"
+    >
       <div class="tl-content">
         <h2>2016</h2>
         <p>
@@ -23,7 +51,21 @@
         </p>
       </div>
     </div>
-    <div class="tl-container tl-left">
+    <div
+      class="tl-container tl-left"
+      v-motion
+      :initial="{
+        x: -100,
+        opacity: 0,
+      }"
+      :visibleOnce="{
+        x: 0,
+        opacity: 1,
+        transition: {
+          duration: 800,
+        },
+      }"
+    >
       <div class="tl-content">
         <h2>2015</h2>
         <p>
@@ -34,7 +76,21 @@
         </p>
       </div>
     </div>
-    <div class="tl-container tl-right">
+    <div
+      class="tl-container tl-right"
+      v-motion
+      :initial="{
+        x: 100,
+        opacity: 0,
+      }"
+      :visibleOnce="{
+        x: 0,
+        opacity: 1,
+        transition: {
+          duration: 800,
+        },
+      }"
+    >
       <div class="tl-content">
         <h2>2012</h2>
         <p>
@@ -45,7 +101,21 @@
         </p>
       </div>
     </div>
-    <div class="tl-container tl-left">
+    <div
+      class="tl-container tl-left"
+      v-motion
+      :initial="{
+        x: -100,
+        opacity: 0,
+      }"
+      :visibleOnce="{
+        x: 0,
+        opacity: 1,
+        transition: {
+          duration: 800,
+        },
+      }"
+    >
       <div class="tl-content">
         <h2>2011</h2>
         <p>
@@ -56,7 +126,21 @@
         </p>
       </div>
     </div>
-    <div class="tl-container tl-right">
+    <div
+      class="tl-container tl-right"
+      v-motion
+      :initial="{
+        x: 100,
+        opacity: 0,
+      }"
+      :visibleOnce="{
+        x: 0,
+        opacity: 1,
+        transition: {
+          duration: 800,
+        },
+      }"
+    >
       <div class="tl-content">
         <h2>2007</h2>
         <p>

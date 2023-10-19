@@ -1,7 +1,11 @@
 <template>
   <Navbar />
   <MobileNav />
-  <router-view></router-view>
+  <router-view v-slot="{ Component }">
+    <transition name="route" mode="out-in">
+      <component :is="Component"></component>
+    </transition>
+  </router-view>
   <Footer />
 </template>
 
@@ -32,6 +36,7 @@ export default {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "SassoonPrimary", Helvetica, Arial;
 }
 
 body {
@@ -41,13 +46,11 @@ body {
 h1,
 h2,
 h3 {
-  font-family: "SassoonPrimary", Helvetica, Arial;
   font-weight: 600;
   font-size: 25px;
 }
 
 p {
-  font-family: "SassoonPrimary", Helvetica, Arial;
   font-size: 18px;
 }
 
@@ -114,23 +117,4 @@ nav a.router-link-exact-active {
     padding-top: 0%;
   }
 }
-
-/* router transitions */
-/* .route-enter-from {
-  opacity: 0;
-  transform: translateX(100px);
-}
-
-.route-enter-active {
-  transition: all 0.2s ease-out;
-}
-
-.route-leave-to {
-  opacity: 0;
-  transform: translateX(-100px);
-}
-
-.route-leave-active {
-  transition: all 0.2s ease-in;
-} */
 </style>

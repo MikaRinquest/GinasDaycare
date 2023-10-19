@@ -2,6 +2,7 @@ import { createApp } from "vue";
 import App from "./App.vue";
 import router from "./router";
 import store from "./store";
+import { MotionPlugin } from "@vueuse/motion";
 
 //Import fontawesome core
 import { library } from "@fortawesome/fontawesome-svg-core";
@@ -38,4 +39,5 @@ createApp(App)
   .component("fa", FontAwesomeIcon)
   .use(store)
   .use(router)
+  .use(MotionPlugin)
   .mount("#app");

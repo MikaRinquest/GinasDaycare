@@ -174,7 +174,7 @@ export default {
   display: inline-flex;
   align-items: center;
   transform: scale(1.5);
-  width: 25%;
+  width: 30%;
   margin-top: 10px;
 }
 
@@ -192,7 +192,7 @@ export default {
   background-color: #008956;
   color: white;
   border: none;
-  border-radius: 10px;
+  border-radius: 7px;
 }
 
 .button:hover {
