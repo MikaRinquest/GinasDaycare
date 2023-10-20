@@ -12,12 +12,12 @@
       <span class="span">
         <fa :icon="['fas', 'clock']" class="icon" />
         <div class="op-holder">
-          <p class="contact-info">Operating hours: Mon - Thurs 06:30 - 17:00</p>
+          <p class="contact-info weekday">
+            Operating hours: Mon - Thurs 06:30 - 17:00
+          </p>
           <p class="contact-info">Operating hours: Fridays 06:30 - 16:00</p>
         </div>
       </span>
-    </div>
-    <div class="map-holder">
       <span class="span">
         <fa :icon="[fas, 'location-dot']" class="icon" />
         <p class="contact-info">Come find us</p>
@@ -54,15 +54,25 @@ export default {};
   font-size: 18px;
   font-weight: 600;
   padding-bottom: 20px;
-}
-
-.contact-info {
-  padding-left: 10%;
   width: 250px;
 }
 
+.op-holder {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-info {
+  padding-left: 25px;
+}
+
+.weekday {
+  padding-bottom: 20px;
+}
+
 .icon {
-  font-size: 25px;
+  width: 25px;
+  height: 25px;
 }
 
 .map-holder {
@@ -71,10 +81,6 @@ export default {};
   padding-left: 10%;
   padding-top: 2%;
   padding-bottom: 2%;
-}
-
-.op-holder {
-  display: flex;
 }
 
 /* Medium Devices */

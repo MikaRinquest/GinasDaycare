@@ -34,7 +34,7 @@ export default {
 .title {
   margin: 0;
   padding-top: 1%;
-  padding-bottom: 5px;
+  padding-bottom: 1%;
   height: 10%;
   font-size: 40px;
   text-align: center;

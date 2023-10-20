@@ -43,10 +43,22 @@
         />
       </div>
       <div class="select-holder">
-        <h3 class="select">
-          Please tick which Age Group you are applying for in below:
-        </h3>
+        <h3 class="select">Please tick which Age you are applying for:</h3>
         <div class="checkbox-holder">
+          <!-- <span class="checkbox" v-for="check in checks" :key="check.id">
+            <input
+              type="checkbox"
+              :name="check.name"
+              class="check"
+              v-model="assist"
+            />
+            <label
+              :for="check.name"
+              class="label"
+              @click="addCheck(check.value)"
+              >{{ check.label }}</label
+            >
+          </span> -->
           <span class="checkbox">
             <input
               type="checkbox"
@@ -55,7 +67,7 @@
               value=" Ages 0 - 3 Class"
               v-model="assist"
             />
-            <label class="label" for="babies">Ages 0 - 3</label>
+            <label for="babies" class="label">Ages 0 - 3</label>
           </span>
           <span class="checkbox">
             <input
@@ -65,7 +77,7 @@
               value=" Ages 3 - 6 Class"
               v-model="assist"
             />
-            <label class="label" for="toddler">Ages 3 - 6</label>
+            <label for="toddler" class="label">Ages 3 - 6</label>
           </span>
         </div>
         <div class="checkbox-holder">
@@ -77,7 +89,7 @@
               value=" Aftercare"
               v-model="assist"
             />
-            <label class="label" for="aftercare">Aftercare</label>
+            <label for="aftercare" class="label">Aftercare</label>
           </span>
           <span class="checkbox">
             <input
@@ -87,7 +99,7 @@
               value=" Extra Mural Class"
               v-model="assist"
             />
-            <label class="label" for="extra">Extra Mural Activities</label>
+            <label for="extra" class="label">Extra Mural Activities</label>
           </span>
         </div>
       </div>
@@ -107,6 +119,14 @@ export default {
       address: "",
       tel: "",
       assist: [],
+      // checks: [
+      //   {
+      //     id: 1,
+      //     name: "babies",
+      //     value: "Ages 0 - 3 class",
+      //     label: "Ages 0 - 3 class",
+      //   },
+      // ],
     };
   },
   methods: {
@@ -118,9 +138,18 @@ export default {
         tel: this.tel,
         message: this.assist,
       };
-      // console.log(emailBody);
-      return this.$store.dispatch("sendEmail", emailBody);
+      console.log(emailBody);
+      // return this.$store.dispatch("sendEmail", emailBody);
     },
+    // addCheck(check) {
+    //   const newArray = this.array(check);
+    //   // if (newArray == true) {
+    //   //   this.assist.push(check);
+    //   // } else {
+    //   //   newArray.splice(check, 1);
+    //   // }
+    //   console.log(newArray);
+    // },
   },
 };
 </script>
@@ -147,7 +176,8 @@ export default {
   margin-bottom: 10px;
   width: 40%;
   height: 40px;
-  font-size: 15px;
+  font-size: 18px;
+  padding-left: 25px;
 }
 
 .select {
@@ -172,16 +202,20 @@ export default {
 
 .checkbox {
   display: inline-flex;
-  align-items: center;
-  transform: scale(1.5);
+  align-items: baseline;
   width: 30%;
   margin-top: 10px;
 }
 
+.check {
+  transform: scale(1.5);
+}
+
 .label {
-  font-size: 15px;
-  padding-left: 5px;
+  font-size: 18px;
+  padding-left: 15px;
   padding-bottom: 6px;
+  font-weight: 600;
 }
 
 .button {
