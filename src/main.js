@@ -3,6 +3,8 @@ import App from "./App.vue";
 import router from "./router";
 import store from "./store";
 import { MotionPlugin } from "@vueuse/motion";
+import VueSweetalert2 from "vue-sweetalert2";
+import "sweetalert2/dist/sweetalert2.min.css";
 
 //Import fontawesome core
 import { library } from "@fortawesome/fontawesome-svg-core";
@@ -40,4 +42,5 @@ createApp(App)
   .use(store)
   .use(router)
   .use(MotionPlugin)
+  .use(VueSweetalert2)
   .mount("#app");

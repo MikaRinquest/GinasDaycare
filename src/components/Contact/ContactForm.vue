@@ -62,7 +62,7 @@
           <span class="checkbox">
             <input
               type="checkbox"
-              name="babies"
+              id="babies"
               class="check"
               value=" Ages 0 - 3 Class"
               v-model="assist"
@@ -72,7 +72,7 @@
           <span class="checkbox">
             <input
               type="checkbox"
-              name="toddler"
+              id="toddler"
               class="check"
               value=" Ages 3 - 6 Class"
               v-model="assist"
@@ -84,7 +84,7 @@
           <span class="checkbox">
             <input
               type="checkbox"
-              name="aftercare"
+              id="aftercare"
               class="check"
               value=" Aftercare"
               v-model="assist"
@@ -94,7 +94,7 @@
           <span class="checkbox">
             <input
               type="checkbox"
-              name="extra"
+              id="extra"
               class="check"
               value=" Extra Mural Class"
               v-model="assist"
@@ -129,6 +129,7 @@ export default {
       // ],
     };
   },
+
   methods: {
     send() {
       const emailBody = {
@@ -139,17 +140,24 @@ export default {
         message: this.assist,
       };
       console.log(emailBody);
+      this.$swal({
+        icon: "success",
+        text: "Your query has been sent.",
+        confirmButtonText: "Ok",
+      }).then((result) => {
+        if (result.isConfirmed) {
+          (this.name = null),
+            (this.surname = null),
+            (this.address = null),
+            (this.tel = null),
+            (this.message = null),
+            console.log("Everything deleted");
+        } else {
+          console.log("Nothing to report");
+        }
+      });
       // return this.$store.dispatch("sendEmail", emailBody);
     },
-    // addCheck(check) {
-    //   const newArray = this.array(check);
-    //   // if (newArray == true) {
-    //   //   this.assist.push(check);
-    //   // } else {
-    //   //   newArray.splice(check, 1);
-    //   // }
-    //   console.log(newArray);
-    // },
   },
 };
 </script>
