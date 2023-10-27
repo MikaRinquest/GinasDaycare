@@ -43,7 +43,9 @@
         />
       </div>
       <div class="select-holder">
-        <h3 class="select">Please tick which Age you are applying for:</h3>
+        <h3 class="select">
+          Please tick which age group you are applying for:
+        </h3>
         <div class="checkbox-holder">
           <!-- <span class="checkbox" v-for="check in checks" :key="check.id">
             <input
@@ -74,10 +76,10 @@
               type="checkbox"
               id="toddler"
               class="check"
-              value=" Ages 3 - 6 Class"
+              value=" Ages 3 - 4 Class"
               v-model="assist"
             />
-            <label for="toddler" class="label">Ages 3 - 6</label>
+            <label for="toddler" class="label">Ages 3 - 4</label>
           </span>
         </div>
         <div class="checkbox-holder">
@@ -86,10 +88,10 @@
               type="checkbox"
               id="aftercare"
               class="check"
-              value=" Aftercare"
+              value=" Ages 4 - 5"
               v-model="assist"
             />
-            <label for="aftercare" class="label">Aftercare</label>
+            <label for="aftercare" class="label">Ages 4 - 5</label>
           </span>
           <span class="checkbox">
             <input
@@ -119,14 +121,6 @@ export default {
       address: "",
       tel: "",
       assist: [],
-      // checks: [
-      //   {
-      //     id: 1,
-      //     name: "babies",
-      //     value: "Ages 0 - 3 class",
-      //     label: "Ages 0 - 3 class",
-      //   },
-      // ],
     };
   },
 

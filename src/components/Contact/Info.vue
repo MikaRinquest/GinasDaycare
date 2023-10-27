@@ -13,7 +13,7 @@
         <fa :icon="['fas', 'clock']" class="icon" />
         <div class="op-holder">
           <p class="contact-info weekday">
-            Operating hours: Mon - Thurs 06:30 - 17:00
+            Operating hours: Mon - Thurs 06:30 - 17:15
           </p>
           <p class="contact-info">Operating hours: Fridays 06:30 - 16:00</p>
         </div>
