@@ -43,7 +43,7 @@
       </div>
     </div>
     <div class="values">
-      <h2>Values of our Centre Management</h2>
+      <h2 class="value-title title">Values of our Centre Management</h2>
       <div class="card-holder">
         <div class="row1">
           <div class="card"><p>Faithful</p></div>
@@ -158,6 +158,11 @@ export default {
 .text-end {
   text-align: end;
 }
+
+.value-title {
+  text-align: center;
+}
+
 .card-holder {
   display: flex;
   flex-direction: column;
@@ -166,16 +171,18 @@ export default {
 .row1,
 .row2 {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
 }
 .card {
-  width: 100px;
-  height: 100px;
+  width: 120px;
+  height: 120px;
   text-align: center;
   display: flex;
   align-items: center;
   background-color: grey;
   justify-content: center;
+  margin-right: 5%;
+  margin-bottom: 3%;
 }
 
 /* Average Devices */
