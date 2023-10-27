@@ -34,15 +34,15 @@ export default {
       slides: [
         {
           id: "1",
-          img: "https://i.postimg.cc/1RJDyzmX/Contact-2.webp",
+          img: "https://i.postimg.cc/cLmNcVJw/CLASSROOM-ACTVITY.webp",
         },
         {
           id: "2",
-          img: "https://i.postimg.cc/4N0thFhT/0-2.webp",
+          img: "https://i.postimg.cc/Dzw3pBWD/CAREER-DAY-1.webp",
         },
         {
           id: "3",
-          img: "https://i.postimg.cc/SNRCRpRr/Contact-3.webp",
+          img: "https://i.postimg.cc/rmdXMsNN/CLASSROOM-PICTURE.webp",
         },
       ],
     };

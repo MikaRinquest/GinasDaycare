@@ -11,7 +11,7 @@
         </div>
         <transition appear @before-enter="beforeEnter" @enter="enter">
           <img
-            src="https://i.postimg.cc/zX7m6qbZ/Pic-1.jpg"
+            src="https://i.postimg.cc/rmdXMsNN/CLASSROOM-PICTURE.webp"
             class="image"
             alt="Our vision"
           />
@@ -35,7 +35,7 @@
           @enter="enterMission"
         >
           <img
-            src="https://i.postimg.cc/c40yFvJB/Pic-2.jpg"
+            src="https://i.postimg.cc/cLmNcVJw/CLASSROOM-ACTVITY.webp"
             class="image mission-img"
             alt="Our mission"
           />
