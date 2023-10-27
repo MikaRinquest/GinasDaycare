@@ -48,6 +48,7 @@ h1 {
   padding-bottom: 1%;
   text-align: center;
   font-size: 35px;
+  color: red;
 }
 
 .landing {
