@@ -45,15 +45,11 @@
     <div class="values">
       <h2 class="value-title title">Values of our Centre Management</h2>
       <div class="card-holder">
-        <div class="row1">
-          <div class="card"><p>Faithful</p></div>
-          <div class="card"><p>Loving</p></div>
-          <div class="card"><p>Kind</p></div>
-        </div>
-        <div class="row2">
-          <div class="card"><p>Trustworthy</p></div>
-          <div class="card"><p>Responsible</p></div>
-        </div>
+        <div class="card"><p>Faithful</p></div>
+        <div class="card"><p>Loving</p></div>
+        <div class="card"><p>Kind</p></div>
+        <div class="card"><p>Trustworthy</p></div>
+        <div class="card"><p>Responsible</p></div>
       </div>
     </div>
   </section>
@@ -110,7 +106,7 @@ export default {
     ),
     url("https://i.postimg.cc/yNLg4rcm/About-bg.jpg");
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: 110vw;
   color: white;
 }
 
@@ -165,21 +161,19 @@ export default {
 
 .card-holder {
   display: flex;
-  flex-direction: column;
+  justify-content: center;
   padding-top: 3%;
 }
-.row1,
-.row2 {
-  display: flex;
-  justify-content: center;
-}
+
 .card {
   width: 120px;
   height: 120px;
   text-align: center;
   display: flex;
   align-items: center;
-  background-color: grey;
+  background-color: goldenrod;
+  color: black;
+  font-weight: bold;
   justify-content: center;
   margin-right: 5%;
   margin-bottom: 3%;
