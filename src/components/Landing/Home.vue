@@ -1,5 +1,5 @@
 <template>
-  <h1>Registration Open for 2023</h1>
+  <h1>Registration Open for 2024</h1>
   <div class="landing">
     <transition appear @before-enter="beforeTitle" @enter="enter">
       <span class="title-holder">

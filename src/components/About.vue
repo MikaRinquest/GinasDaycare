@@ -45,11 +45,14 @@
     <div class="values">
       <h2 class="value-title title">Values of our Centre Management</h2>
       <div class="card-holder">
-        <div class="card"><p>Faithful</p></div>
-        <div class="card"><p>Loving</p></div>
-        <div class="card"><p>Kind</p></div>
-        <div class="card"><p>Trustworthy</p></div>
-        <div class="card"><p>Responsible</p></div>
+        <div
+          class="card"
+          v-for="card in cards"
+          :key="card.id"
+          :data-index="card.id"
+        >
+          <p>{{ card.value }}</p>
+        </div>
       </div>
     </div>
   </section>
@@ -58,6 +61,33 @@
 <script>
 import { gsap } from "gsap/all";
 export default {
+  data() {
+    return {
+      cards: [
+        {
+          id: 1,
+          value: "Faithful",
+        },
+        {
+          id: 2,
+          value: "Loving",
+        },
+        {
+          id: 3,
+          value: "Kind",
+        },
+        {
+          id: 4,
+          value: "Trustworthy",
+        },
+        {
+          id: 5,
+          value: "Responsible",
+        },
+      ],
+    };
+  },
+
   methods: {
     beforeEnter(el) {
       el.style.transform = "translateX(60px)";
@@ -65,7 +95,6 @@ export default {
     },
 
     enter(el, done) {
-      console.log("Start of the animation process");
       gsap.to(el, {
         duration: 1.5,
         x: 0,
