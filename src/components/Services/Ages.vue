@@ -29,19 +29,19 @@ export default {
       groups: [
         {
           id: "1",
-          age: "0 - 2 years old",
+          age: "0 - 3 years old",
           image: "https://i.postimg.cc/x1MC10rB/Contact-1.webp  ",
           extra: "",
         },
         {
           id: "2",
-          age: "3 - 6 years old",
+          age: "3 - 4 years old",
           image: "https://i.postimg.cc/mrSg78gw/3-6.webp",
           extra: "",
         },
         {
           id: "3",
-          age: "Aftercare",
+          age: "4 - 5 years old",
           image:
             "https://i.postimg.cc/3whwyPYN/Whats-App-Image-2023-10-17-at-10-08-35.webp",
           extra: "",
@@ -106,6 +106,8 @@ export default {
   max-width: 370px;
   width: 70%;
   height: -webkit-fill-available;
+  height: -moz-available;
+  height: fill-available;
   margin-top: 5px;
 }
 

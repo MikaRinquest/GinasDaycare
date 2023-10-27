@@ -24,8 +24,8 @@
           <h2 class="mission-title title">Our Mission</h2>
           <p class="text text-end">
             At Ginas Day-Educare we build children from different backgrounds,
-            especially those in need. We help them to be disciplined, confident
-            to shape their own future and be part of their community
+            especially those in need. We help them to be disciplined and
+            confident to shape their own future and be part of their community
             development.
           </p>
         </div>
@@ -40,6 +40,20 @@
             alt="Our mission"
           />
         </transition>
+      </div>
+    </div>
+    <div class="values">
+      <h2>Values of our Centre Management</h2>
+      <div class="card-holder">
+        <div class="row1">
+          <div class="card"><p>Faithful</p></div>
+          <div class="card"><p>Loving</p></div>
+          <div class="card"><p>Kind</p></div>
+        </div>
+        <div class="row2">
+          <div class="card"><p>Trustworthy</p></div>
+          <div class="card"><p>Responsible</p></div>
+        </div>
       </div>
     </div>
   </section>
@@ -143,6 +157,25 @@ export default {
 
 .text-end {
   text-align: end;
+}
+.card-holder {
+  display: flex;
+  flex-direction: column;
+  padding-top: 3%;
+}
+.row1,
+.row2 {
+  display: flex;
+  justify-content: space-evenly;
+}
+.card {
+  width: 100px;
+  height: 100px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  background-color: grey;
+  justify-content: center;
 }
 
 /* Average Devices */
