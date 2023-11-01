@@ -107,7 +107,7 @@ export default {
   width: 70%;
   height: -webkit-fill-available;
   height: -moz-available;
-  height: fill-available;
+  height: stretch;
   margin-top: 5px;
 }
 

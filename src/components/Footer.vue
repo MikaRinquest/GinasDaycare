@@ -14,12 +14,19 @@ export default {};
 <style scoped>
 .footer {
   background-color: #acac9a;
+  height: 3vh;
+  display: flex;
 }
 
 .copyright-holder {
   display: inline-flex;
   align-items: center;
   margin-left: 10px;
+}
+
+.icon {
+  width: 25px;
+  aspect-ratio: 1/1;
 }
 
 .copyright {

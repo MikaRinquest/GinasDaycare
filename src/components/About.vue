@@ -134,9 +134,10 @@ export default {
       rgba(0, 0, 0, 0.5)
     ),
     url("https://i.postimg.cc/yNLg4rcm/About-bg.jpg");
-  background-repeat: no-repeat;
+  background-repeat: repeat;
   background-size: 110vw;
   color: white;
+  min-height: 97vh;
 }
 
 .title {
@@ -196,7 +197,7 @@ export default {
 
 .card {
   width: 120px;
-  height: 120px;
+  aspect-ratio: 1/1;
   text-align: center;
   display: flex;
   align-items: center;
@@ -206,6 +207,11 @@ export default {
   justify-content: center;
   margin-right: 5%;
   margin-bottom: 3%;
+  transition: all 0.4s ease;
+}
+
+.card:hover {
+  transform: scale(1.5);
 }
 
 /* Average Devices */
@@ -221,6 +227,7 @@ export default {
 
   .title {
     text-align: center;
+    margin-top: 5%;
   }
 
   .text {
@@ -230,6 +237,21 @@ export default {
 
   .image {
     width: 60%;
+  }
+
+  .card-holder {
+    flex-wrap: wrap;
+  }
+
+  .card {
+    width: 200px;
+  }
+
+  .card:hover {
+    transform: scale(1.2);
+    margin-right: 6%;
+    margin-bottom: 6%;
+    margin-top: 3%;
   }
 }
 /* Medium Devices */
@@ -245,6 +267,7 @@ export default {
 
   .title {
     text-align: center;
+    margin-top: 5%;
   }
 
   .text {
@@ -255,10 +278,24 @@ export default {
   .image {
     width: 50%;
   }
+
+  .card-holder {
+    flex-wrap: wrap;
+  }
+
+  .card {
+    width: 200px;
+  }
+  .card:hover {
+    transform: scale(1.2);
+    margin-right: 6%;
+    margin-bottom: 6%;
+    margin-top: 3%;
+  }
 }
 /* Small devices */
 @media only screen and (max-width: 600px) {
-  #about-holder {
+  #about {
     background-repeat: repeat-y;
   }
 
@@ -269,6 +306,7 @@ export default {
 
   .title {
     text-align: center;
+    margin-top: 10%;
   }
 
   .text {
@@ -278,6 +316,21 @@ export default {
 
   .image {
     width: 55%;
+  }
+
+  .card-holder {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    width: 200px;
+  }
+
+  .card:hover {
+    transform: scale(1.1);
+    margin-top: 3%;
+    margin-bottom: 6%;
   }
 }
 </style>
