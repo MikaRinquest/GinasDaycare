@@ -86,12 +86,22 @@
           <span class="checkbox">
             <input
               type="checkbox"
-              id="aftercare"
+              id="kid"
               class="check"
               value=" Ages 4 - 5"
               v-model="assist"
             />
-            <label for="aftercare" class="label">Ages 4 - 5</label>
+            <label for="kid" class="label">Ages 4 - 5</label>
+          </span>
+          <span class="checkbox">
+            <input
+              type="checkbox"
+              id="aftercare"
+              class="check"
+              value=" Extra Mural Class"
+              v-model="assist"
+            />
+            <label for="aftercare" class="label">Aftercare</label>
           </span>
           <span class="checkbox">
             <input

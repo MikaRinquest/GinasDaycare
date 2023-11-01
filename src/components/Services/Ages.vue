@@ -29,7 +29,7 @@ export default {
       groups: [
         {
           id: "1",
-          age: "0 - 3 years old",
+          age: "0 - 2 years old",
           image: "https://i.postimg.cc/pTgNTv0b/concert.webp ",
           extra: "",
         },
@@ -42,6 +42,13 @@ export default {
         {
           id: "3",
           age: "4 - 5 years old",
+          image:
+            "https://i.postimg.cc/XJPH8gFw/Whats-App-Image-2023-10-27-at-11-12-46.webp",
+          extra: "",
+        },
+        {
+          id: "4",
+          age: "Aftercare",
           image:
             "https://i.postimg.cc/XJPH8gFw/Whats-App-Image-2023-10-27-at-11-12-46.webp",
           extra: "",
