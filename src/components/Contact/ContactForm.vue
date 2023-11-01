@@ -98,7 +98,7 @@
               type="checkbox"
               id="aftercare"
               class="check"
-              value=" Extra Mural Class"
+              value="Aftercare"
               v-model="assist"
             />
             <label for="aftercare" class="label">Aftercare</label>

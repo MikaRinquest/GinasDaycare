@@ -30,27 +30,27 @@ export default {
         {
           id: "1",
           age: "0 - 2 years old",
-          image: "https://i.postimg.cc/pTgNTv0b/concert.webp ",
+          image:
+            "https://i.postimg.cc/J4MkwjD5/Whats-App-Image-2023-11-01-at-10-37-57.webp ",
           extra: "",
         },
         {
           id: "2",
           age: "3 - 4 years old",
-          image: "https://i.postimg.cc/LsHb652Z/ACTIVITY.webp",
+          image: "https://i.postimg.cc/pTgNTv0b/concert.webp",
           extra: "",
         },
         {
           id: "3",
           age: "4 - 5 years old",
-          image:
-            "https://i.postimg.cc/XJPH8gFw/Whats-App-Image-2023-10-27-at-11-12-46.webp",
+          image: "https://i.postimg.cc/LsHb652Z/ACTIVITY.webp",
           extra: "",
         },
         {
           id: "4",
           age: "Aftercare",
           image:
-            "https://i.postimg.cc/XJPH8gFw/Whats-App-Image-2023-10-27-at-11-12-46.webp",
+            "https://i.postimg.cc/QM0nBDdY/WhatsApp_Image_2023-10-27_at_11.28.30.webp",
           extra: "",
         },
         {
@@ -82,21 +82,23 @@ export default {
 </script>
 
 <style scoped>
+.class-holder {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
 .class-title {
   text-align: center;
   margin-bottom: 3%;
   margin-top: 3%;
 }
 
-.class-holder > div {
-  flex: 50%;
-}
-
 .classes {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 20%;
+  width: 30%;
   margin: 10px;
   background-color: #ddc;
   border: solid 5vmin #eee;
@@ -122,10 +124,6 @@ export default {
   width: 250px;
   text-align: center;
   margin: 5px;
-}
-
-.class-holder {
-  display: flex;
 }
 
 /* Medium Devices */
