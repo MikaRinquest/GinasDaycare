@@ -160,7 +160,7 @@ export default {
           console.log("Nothing to report");
         }
       });
-      // return this.$store.dispatch("sendEmail", emailBody);
+      return this.$store.dispatch("sendEmail", emailBody);
     },
   },
 };
