@@ -24,6 +24,13 @@ const routes = [
     },
   },
   {
+    path: "/gallery",
+    name: "gallery",
+    component: function () {
+      return import(/* webpackChunkName: "about" */ "../views/GalleryView.vue");
+    },
+  },
+  {
     path: "/contact",
     name: "contact",
     component: function () {

@@ -53,6 +53,7 @@ p {
 #landing,
 #about,
 #services,
+#photos,
 #contact {
   padding-top: 5%;
 }
