@@ -2,8 +2,8 @@
   <section id="photos">
     <div class="memory-holder">
       <div class="memory" v-for="(memory, i) in memories" :key="i">
-        <h2>{{ memory.title }}</h2>
-        <img :src="memory.img" />
+        <img :src="memory.img" :alt="memory.title" class="memory-img" />
+        <h2 class="memory-title">{{ memory.title }}</h2>
       </div>
     </div>
   </section>
@@ -69,17 +69,51 @@ export default {
 </script>
 
 <style scoped>
-div {
+.memory-holder {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 3%;
+}
+
+.memory {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-top: 2%;
+  background-color: #dd9b61;
+  border: solid 5vmin #eee;
+  border-top-color: #bf8048;
+  border-right-color: #a1662f;
+  border-bottom-color: #a1662f;
+  border-left-color: #bf8048;
+  border-radius: 2px;
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.25) inset,
+    0 5px 10px 5px rgba(0, 0, 0, 0.25);
 }
 
-h2 {
+.memory:before {
+  content: "";
+  position: relative;
+  width: 20px;
+  height: 20px;
+  border: 1.5px solid black;
+  top: -45px;
+  border-bottom: none;
+  border-right: none;
+  transform: rotate(45deg);
+}
+
+.memory-title {
   margin: 3%;
 }
 
-img {
-  height: 450px;
+.memory-img {
+  width: 300px;
+  height: -webkit-fill-available;
+  height: -moz-available;
+  height: fit-content;
+  margin-top: -20px;
 }
 </style>

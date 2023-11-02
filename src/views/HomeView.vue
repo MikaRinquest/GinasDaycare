@@ -1,14 +1,17 @@
 <template>
-  <Landing />
+  <section id="landing">
+    <Home />
+    <Timeline />
+  </section>
 </template>
 
 <script>
-// @ is an alias to /src
-import Landing from "@/components/Landing.vue";
-
+import Home from "@/components/Landing/Home.vue";
+import Timeline from "@/components/Landing/Timeline.vue";
 export default {
   components: {
-    Landing,
+    Home,
+    Timeline,
   },
 };
 </script>
