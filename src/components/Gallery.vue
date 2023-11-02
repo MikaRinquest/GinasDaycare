@@ -31,19 +31,19 @@ export default {
           img: "https://i.postimg.cc/yYLw70jz/pj.webp",
         },
         {
-          title: "Dress Up Day(Doctor)",
+          title: "Career Day",
           img: "https://i.postimg.cc/NjLZFLC2/Dress2.webp",
         },
         {
-          title: "Dress Up Day(Firemen)",
+          title: "Career Day",
           img: "https://i.postimg.cc/25ZJdMDz/Dress3.webp",
         },
         {
-          title: "Dress Up Day(Police)",
+          title: "Career Day",
           img: "https://i.postimg.cc/L87w1RGC/Dress1.webp",
         },
         {
-          title: "Baking Day",
+          title: "Bake Day",
           img: "https://i.postimg.cc/Hs1N0dWj/Bake.webp",
         },
         {
@@ -51,15 +51,15 @@ export default {
           img: "https://i.postimg.cc/tJ6vWmnK/grad.webp",
         },
         {
-          title: "Class Birthday",
+          title: "Birthday Class Party",
           img: "https://i.postimg.cc/7LBRkzyW/bday.webp",
         },
         {
-          title: "Class Birthday",
+          title: "Birthday Class Party",
           img: "https://i.postimg.cc/506RNt4N/bday-2.webp",
         },
         {
-          title: "Class Birthday",
+          title: "Birthday Class Party",
           img: "https://i.postimg.cc/Pqf7940D/bday-3.webp",
         },
       ],
