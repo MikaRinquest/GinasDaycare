@@ -43,7 +43,7 @@ export default {
           img: "https://i.postimg.cc/L87w1RGC/Dress1.webp",
         },
         {
-          title: "Bake Day",
+          title: "Make and Bake Day",
           img: "https://i.postimg.cc/Hs1N0dWj/Bake.webp",
         },
         {
