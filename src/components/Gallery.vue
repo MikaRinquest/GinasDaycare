@@ -47,6 +47,10 @@ export default {
           img: "https://i.postimg.cc/Hs1N0dWj/Bake.webp",
         },
         {
+          title: "Graduation Day",
+          img: "https://i.postimg.cc/tJ6vWmnK/grad.webp",
+        },
+        {
           title: "Class Birthday",
           img: "https://i.postimg.cc/7LBRkzyW/bday.webp",
         },
@@ -57,10 +61,6 @@ export default {
         {
           title: "Class Birthday",
           img: "https://i.postimg.cc/Pqf7940D/bday-3.webp",
-        },
-        {
-          title: "Graduation Day",
-          img: "https://i.postimg.cc/tJ6vWmnK/grad.webp",
         },
       ],
     };
@@ -82,6 +82,7 @@ export default {
   flex-direction: column;
   align-items: center;
   margin-top: 2%;
+  margin-bottom: 2%;
   background-color: #dd9b61;
   border: solid 5vmin #eee;
   border-top-color: #bf8048;
