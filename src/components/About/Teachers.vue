@@ -71,4 +71,14 @@ export default {
   border: 5px solid black;
   border-radius: 50%;
 }
+
+@media only screen and (max-width: 1000px) {
+  .teacher {
+    margin: 1%;
+  }
+
+  .t-name {
+    font-size: 30px;
+  }
+}
 </style>

@@ -99,13 +99,13 @@ export default {
   }
 
   .title {
-    text-align: center;
+    text-align: center !important;
     margin-top: 5%;
   }
 
   .text {
     max-width: 98%;
-    text-align: center;
+    text-align: center !important;
   }
 
   .image {
