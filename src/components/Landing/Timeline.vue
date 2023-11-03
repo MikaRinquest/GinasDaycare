@@ -71,7 +71,7 @@ export default {
           text: "CCTV Camera on both premises.",
         },
         {
-          text: "Qualified SED Teachers.",
+          text: "Qualified ECD Teachers.",
         },
         {
           text: "Aftercare ( Teacher will assist with homework and reading skills, School holiday assistance aswell).",
