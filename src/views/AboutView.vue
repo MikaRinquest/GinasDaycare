@@ -3,6 +3,7 @@
     <Vision />
     <Mission />
     <Values />
+    <Teachers />
   </section>
 </template>
 
@@ -10,11 +11,13 @@
 import Vision from "@/components/About/Vision.vue";
 import Mission from "@/components/About/Mission.vue";
 import Values from "@/components/About/Values.vue";
+import Teachers from "@/components/About/Teachers.vue";
 export default {
   components: {
     Vision,
     Mission,
     Values,
+    Teachers,
   },
 };
 </script>
