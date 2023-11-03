@@ -103,6 +103,8 @@
             />
             <label for="aftercare" class="label">Aftercare</label>
           </span>
+        </div>
+        <div class="checkbox-holder">
           <span class="checkbox">
             <input
               type="checkbox"
@@ -113,6 +115,7 @@
             />
             <label for="extra" class="label">Extra Mural Activities</label>
           </span>
+          <span class="checkbox"> </span>
         </div>
       </div>
       <div class="input-holder">
