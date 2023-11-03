@@ -14,6 +14,9 @@
         <router-link class="route-name" to="/services" @click="toggle = !toggle"
           >Services</router-link
         >
+        <router-link class="route-name" to="/gallery" @click="toggle = !toggle"
+          >Gallery</router-link
+        >
         <router-link class="route-name" to="/contact" @click="toggle = !toggle"
           >Contact Us</router-link
         >

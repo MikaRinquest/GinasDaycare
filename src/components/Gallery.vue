@@ -18,10 +18,7 @@ export default {
           title: "Spring Day",
           img: "https://i.postimg.cc/SQLggZ4S/Spring.webp",
         },
-        {
-          title: "Year End Class Party",
-          img: "https://i.postimg.cc/76RmpL9S/year-end-1.webp",
-        },
+
         {
           title: "Movie Day",
           img: "https://i.postimg.cc/26m1Cpjy/movie.webp",
@@ -31,13 +28,18 @@ export default {
           img: "https://i.postimg.cc/yYLw70jz/pj.webp",
         },
         {
-          title: "Career Day",
-          img: "https://i.postimg.cc/NjLZFLC2/Dress2.webp",
+          title: "Year End Class Party",
+          img: "https://i.postimg.cc/76RmpL9S/year-end-1.webp",
         },
         {
           title: "Career Day",
           img: "https://i.postimg.cc/25ZJdMDz/Dress3.webp",
         },
+        {
+          title: "Career Day",
+          img: "https://i.postimg.cc/NjLZFLC2/Dress2.webp",
+        },
+
         {
           title: "Career Day",
           img: "https://i.postimg.cc/L87w1RGC/Dress1.webp",
@@ -99,7 +101,7 @@ export default {
   position: relative;
   width: 20px;
   height: 20px;
-  border: 1.5px solid black;
+  border: 2.5px solid black;
   top: -45px;
   border-bottom: none;
   border-right: none;
@@ -116,5 +118,45 @@ export default {
   height: -moz-available;
   height: fit-content;
   margin-top: -20px;
+  padding: 5px;
+}
+
+@media only screen and (min-width: 900px) and (max-width: 1000px) {
+  .memory {
+    margin-top: 3%;
+    margin-bottom: 5%;
+  }
+
+  .memory:before {
+    width: 30px;
+    height: 30px;
+    top: -60px;
+  }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 900px) {
+  .memory {
+    margin-top: 3%;
+    margin-bottom: 5%;
+  }
+
+  .memory:before {
+    width: 30px;
+    height: 30px;
+    top: -55px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .memory {
+    margin-top: 3%;
+    margin-bottom: 5%;
+  }
+
+  .memory:before {
+    width: 30px;
+    height: 30px;
+    top: -35px;
+  }
 }
 </style>

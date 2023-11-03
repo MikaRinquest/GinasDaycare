@@ -8,10 +8,11 @@
         x: -100,
         opacity: 0,
       }"
-      :visibleOnce="{
+      :enter="{
         x: 0,
         opacity: 1,
         transition: {
+          delay: 900,
           duration: 800,
         },
       }"
@@ -33,10 +34,11 @@
         x: 100,
         opacity: 0,
       }"
-      :visibleOnce="{
+      :enter="{
         x: 0,
         opacity: 1,
         transition: {
+          delay: 950,
           duration: 800,
         },
       }"
