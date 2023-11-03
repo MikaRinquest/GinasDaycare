@@ -72,7 +72,7 @@ nav a {
 }
 
 nav a.router-link-exact-active {
-  color: white;
+  color: #0288ac;
 }
 
 /* Medium Devices*/

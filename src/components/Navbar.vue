@@ -48,7 +48,6 @@ export default {};
   font-size: 18px;
   text-transform: uppercase;
   font-weight: 500;
-  color: black;
 }
 
 /* Media queries */

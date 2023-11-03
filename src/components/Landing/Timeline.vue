@@ -18,13 +18,11 @@
       }"
     >
       <div class="tl-content">
-        <h2>2017</h2>
+        <h2>2013</h2>
         <p>
-          Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum
-          perfecto mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret
-          expetendis his, te elit voluptua dignissim per, habeo iusto primis ea
-          eam.
+          Gina’s Day-educare was established in 2005 by Owner Georgina Lukas .
         </p>
+        <p>In 2013 Gina’s Day Edu-care exspand another Centre .</p>
       </div>
     </div>
     <div
@@ -44,20 +42,61 @@
       }"
     >
       <div class="tl-content">
-        <h2>2016</h2>
-        <p>
-          Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum
-          perfecto mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret
-          expetendis his, te elit voluptua dignissim per, habeo iusto primis ea
-          eam.
-        </p>
+        <h2>Gina Day – Educare offers the following :</h2>
+        <span class="text-holder" v-for="(offer, i) in offers" :key="i">
+          <p>-</p>
+          <p class="text">{{ offer.text }}</p>
+        </span>
       </div>
     </div>
   </div>
 </template>
 
 <script>
-export default {};
+export default {
+  data() {
+    return {
+      offers: [
+        {
+          text: "Classes from 0- 6 Years old",
+        },
+        {
+          text: "Daily Program we strictly follow every day.",
+        },
+        {
+          text: "Menu pepared Daily by kitchen staff (breakfast & Lunch)",
+        },
+        {
+          text: "Potty Training",
+        },
+        {
+          text: "CCTV Camera on both premises.",
+        },
+        {
+          text: "Qualified Teachers ( Teachers are all qualified  )",
+        },
+        {
+          text: "Aftercare ( Teacher will assist with homework and reading skills, School holiday assistance as well)",
+        },
+        {
+          text: "Class Rooms and Play Area",
+        },
+        {
+          text: "Reports ( All kids are evaluated the end of the Year by Teacher)",
+        },
+        {
+          text: "Parent Meetings ( Always in contact with Parents)",
+        },
+        {
+          text: "Year End Party for all kids. ( includes slides & jumoing Castles etc.)",
+        },
+        {
+          text: "Year End Graduation Concert and graduation/class photos.",
+        },
+      ],
+    };
+  },
+};
 </script>
 
 <style scoped>
@@ -149,7 +188,22 @@ h1 {
   border-radius: 6px;
 }
 
-@media screen and (max-width: 600px) {
+.text-holder {
+  display: flex;
+}
+
+.text {
+  margin-left: 5px;
+}
+
+@media screen and (max-width: 1000px) {
+  p {
+    font-size: 17px;
+  }
+
+  .text-holder {
+    margin-top: 1%;
+  }
   .tl::after {
     left: 31px;
   }
