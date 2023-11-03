@@ -86,13 +86,6 @@ nav a.router-link-exact-active {
   p {
     font-size: 27px;
   }
-
-  #landing,
-  #about,
-  #services,
-  #contact {
-    padding-top: 0%;
-  }
 }
 
 /* Small Devices*/
@@ -105,13 +98,6 @@ nav a.router-link-exact-active {
 
   p {
     font-size: 20px;
-  }
-
-  #landing,
-  #about,
-  #services,
-  #contact {
-    padding-top: 0%;
   }
 }
 </style>

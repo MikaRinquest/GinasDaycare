@@ -15,14 +15,14 @@ export default {
     return {
       memories: [
         {
+          title: "Movie Day",
+          img: "https://i.postimg.cc/26m1Cpjy/movie.webp",
+        },
+        {
           title: "Spring Day",
           img: "https://i.postimg.cc/SQLggZ4S/Spring.webp",
         },
 
-        {
-          title: "Movie Day",
-          img: "https://i.postimg.cc/26m1Cpjy/movie.webp",
-        },
         {
           title: "Pajama Day",
           img: "https://i.postimg.cc/yYLw70jz/pj.webp",
