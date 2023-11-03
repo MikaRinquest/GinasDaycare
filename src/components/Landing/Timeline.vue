@@ -18,7 +18,7 @@
     >
       <div class="tl-content">
         <p class="p1">
-          Gina's Day-educare was established in 2005 by Owner Georgina Lukas .
+          Gina's Day-Educare was established in 2006 by Owner Georgina Lukas .
         </p>
         <p>In 2013 Gina's Day-Educare expanded.</p>
       </div>
@@ -71,7 +71,7 @@ export default {
           text: "CCTV Camera on both premises.",
         },
         {
-          text: "Qualified Teachers.",
+          text: "Qualified SED Teachers.",
         },
         {
           text: "Aftercare ( Teacher will assist with homework and reading skills, School holiday assistance aswell).",
@@ -80,7 +80,7 @@ export default {
           text: "Class Rooms and Play Area.",
         },
         {
-          text: "Reports ( All kids are evaluated the end of the Year by Teacher).",
+          text: "Reports ( All kids are evaluated throughout the year ).",
         },
         {
           text: "Parent Meetings.",

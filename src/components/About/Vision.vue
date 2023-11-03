@@ -4,7 +4,7 @@
       <div>
         <h2 class="vision-title title">Our Vision</h2>
         <p class="text">
-          Every child need to be cared by a family with LOVE, RESPECT &
+          Every child needs to be cared by a family with LOVE, RESPECT &
           SECURITY.We visualise this role.
         </p>
       </div>

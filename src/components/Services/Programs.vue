@@ -1,7 +1,7 @@
 <template>
   <div class="meal-program">
     <h2 class="exp-title">
-      Meal Plan, Stationary List & Extra Mural Activities
+      Meal Plan, Stationary List, Food Contributions & Extra Mural Activities
     </h2>
     <p class="exp">
       Click the buttons below to download a copy of our Meal Plan,Stationary
@@ -12,7 +12,9 @@
       <a href="/Application_form.pdf" download class="download">
         EXTRA MURAL ACTIVITIES
       </a>
-      <a href="/Stationary_list.pdf" download class="download"> STATIONERY </a>
+      <a href="/Stationary_list.pdf" download class="download">
+        STATIONERY AND FOOD CONTRIBUTIONS
+      </a>
     </div>
   </div>
 </template>

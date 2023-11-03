@@ -3,11 +3,20 @@
     <div id="icon-holder">
       <span class="span">
         <fa :icon="['fas', 'phone']" class="icon" />
-        <p class="contact-info">073 283 6633</p>
+        <span class="op-holder">
+          <a class="link" href="tel:073 283 6633">
+            <p class="contact-info">073 283 6633</p>
+          </a>
+          <a class="link" href="tel:087 379 7285">
+            <p class="contact-info">087 379 7285</p>
+          </a>
+        </span>
       </span>
       <span class="span">
         <fa :icon="['fas', 'envelope']" class="icon" />
-        <p class="contact-info">georginalukas1@gmail.com</p>
+        <a href="email:georginalukas1@gmail.com">
+          <p class="contact-info">georginalukas1@gmail.com</p>
+        </a>
       </span>
       <span class="span">
         <fa :icon="['fas', 'clock']" class="icon" />
@@ -41,6 +50,11 @@ export default {};
 </script>
 
 <style scoped>
+.link {
+  text-decoration: none;
+  color: black;
+}
+
 #icon-holder {
   display: flex;
   flex-direction: column;
