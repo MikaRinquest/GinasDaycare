@@ -1,6 +1,6 @@
 <template>
   <div class="stars">
-    <h2 class="title star-t">Meet Our Stars</h2>
+    <h2 class="title star-t">Meet Our Staff</h2>
     <div class="teacher-holder">
       <div class="teacher" v-for="(teacher, i) in teachers" :key="i">
         <img :src="teacher.img" :alt="teacher" class="t-img" />
@@ -17,7 +17,7 @@ export default {
     return {
       teachers: [
         {
-          img: "https://i.postimg.cc/SQLggZ4S/Spring.webp",
+          img: "https://i.postimg.cc/Prk39gyy/Whats-App-Image-2023-11-03-at-11-01-18.webp",
           name: "Spring Day",
           class: "Ages 0-2",
         },
@@ -49,6 +49,8 @@ export default {
 
 <style scoped>
 .star-t {
+  margin-top: 1%;
+  margin-top: 3%;
   text-align: center;
 }
 

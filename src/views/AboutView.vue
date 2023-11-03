@@ -25,15 +25,6 @@ export default {
 <style>
 #about {
   padding-left: 2%;
-  background-image: linear-gradient(
-      0deg,
-      rgba(0, 0, 0, 0.5),
-      rgba(0, 0, 0, 0.5)
-    ),
-    url("https://i.postimg.cc/yNLg4rcm/About-bg.jpg");
-  background-repeat: repeat;
-  background-size: 110vw;
-  color: white;
   min-height: 97vh;
 }
 .title {
@@ -64,10 +55,6 @@ export default {
 
 /* Average Devices */
 @media only screen and (min-width: 770px) and (max-width: 1000px) {
-  #about {
-    background-repeat: repeat-y;
-  }
-
   .p-holder1,
   .p-holder2 {
     flex-direction: column;

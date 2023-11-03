@@ -34,6 +34,7 @@ export default {};
   box-shadow: 10px 10px 20px #5a5a5a, -10px -10px 20px #ffffff;
   z-index: 10;
   position: fixed;
+  background: #e6f4f1;
 }
 
 .nav-holder {

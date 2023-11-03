@@ -36,7 +36,7 @@ export default {
 }
 
 body {
-  background-color: #dadde2;
+  background-color: #5cbde466;
 }
 
 h1,
