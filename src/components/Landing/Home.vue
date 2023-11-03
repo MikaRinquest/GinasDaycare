@@ -33,7 +33,7 @@ export default {
     },
     enter(el) {
       gsap.to(el, {
-        duration: 1.5,
+        duration: 1.3,
         x: 0,
         opacity: 1,
       });

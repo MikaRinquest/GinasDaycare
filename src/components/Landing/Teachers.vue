@@ -4,8 +4,7 @@
     <div class="teacher-holder">
       <div class="teacher" v-for="(teacher, i) in teachers" :key="i">
         <img :src="teacher.img" :alt="teacher" class="t-img" />
-        <h3 class="t-name">{{ teacher.name }}</h3>
-        <p class="t-class">{{ teacher.class }}</p>
+        <p class="t-class">{{ teacher.name }} - {{ teacher.class }}</p>
       </div>
     </div>
   </div>
@@ -17,29 +16,39 @@ export default {
     return {
       teachers: [
         {
-          img: "https://i.postimg.cc/Prk39gyy/Whats-App-Image-2023-11-03-at-11-01-18.webp",
-          name: "Spring Day",
-          class: "Ages 0-2",
+          img: "https://i.postimg.cc/d1dGvGTz/Whats-App-Image-2023-11-03-at-11-39-21.webp",
+          name: "Anthea Matiesie",
+          class: "Kitchen Staff",
         },
         {
-          img: "https://i.postimg.cc/SQLggZ4S/Spring.webp",
-          name: "Spring Day",
-          class: "Ages 0-2",
+          img: "https://i.postimg.cc/KY1nq6cc/Whats-App-Image-2023-11-03-at-11-39-48.webp",
+          name: "Chante Skinner",
+          class: "ECD Teacher",
         },
         {
-          img: "https://i.postimg.cc/SQLggZ4S/Spring.webp",
-          name: "Spring Day",
-          class: "Ages 0-2",
+          img: "https://i.postimg.cc/gjW80rVr/Whats-App-Image-2023-11-03-at-11-40-12.webp",
+          name: "Mariksa Deelman",
+          class: "ECD Teacher",
         },
         {
-          img: "https://i.postimg.cc/SQLggZ4S/Spring.webp",
-          name: "Spring Day",
-          class: "Ages 0-2",
+          img: "https://i.postimg.cc/CK9bWcdG/Whats-App-Image-2023-11-03-at-11-40-53.webp",
+          name: "Vivian Fishe",
+          class: "ECD Teacher",
         },
         {
-          img: "https://i.postimg.cc/SQLggZ4S/Spring.webp",
-          name: "Spring Day",
-          class: "Ages 0-2",
+          img: "https://i.postimg.cc/VL7gKB9R/Whats-App-Image-2023-11-03-at-11-47-10.webp",
+          name: "Maxree Anne David",
+          class: "ECD Teacher",
+        },
+        {
+          img: "https://i.postimg.cc/FHQXGv9m/Whats-App-Image-2023-11-03-at-11-54-28.webp",
+          name: "Nonceba Ngqokoma",
+          class: "ECD Teacher",
+        },
+        {
+          img: "https://i.postimg.cc/J47K3dX0/Whats-App-Image-2023-11-03-at-11-45-05.webp",
+          name: "Caron Koopman",
+          class: "Assistant ECD Teacher",
         },
       ],
     };
@@ -49,9 +58,10 @@ export default {
 
 <style scoped>
 .star-t {
-  margin-top: 1%;
   margin-top: 3%;
+  margin-bottom: 3%;
   text-align: center;
+  font-size: 30px;
 }
 
 .teacher-holder {
@@ -63,13 +73,13 @@ export default {
   display: flex;
   flex-direction: column;
   align-items: center;
-  flex: 20%;
-  margin-bottom: 1%;
+  flex: 30%;
+  margin-bottom: 4%;
 }
 
 .t-img {
   width: 200px;
-  height: 200px;
+  aspect-ratio: 1/1;
   border: 5px solid black;
   border-radius: 50%;
 }

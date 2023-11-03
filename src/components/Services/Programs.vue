@@ -100,7 +100,7 @@ export default {};
     display: flex;
     justify-content: center;
     font-size: 15px;
-    margin-bottom: 1%;
+    margin-bottom: 4%;
   }
 }
 </style>

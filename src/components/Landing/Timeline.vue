@@ -1,5 +1,4 @@
 <template>
-  <h1>Our History</h1>
   <div class="tl">
     <div
       class="tl-container tl-left"
@@ -12,17 +11,16 @@
         x: 0,
         opacity: 1,
         transition: {
-          delay: 900,
+          delay: 1300,
           duration: 800,
         },
       }"
     >
       <div class="tl-content">
-        <h2>2013</h2>
-        <p>
-          Gina’s Day-educare was established in 2005 by Owner Georgina Lukas .
+        <p class="p1">
+          Gina's Day-educare was established in 2005 by Owner Georgina Lukas .
         </p>
-        <p>In 2013 Gina’s Day Edu-care exspand another Centre .</p>
+        <p>In 2013 Gina's Day-Educare expanded.</p>
       </div>
     </div>
     <div
@@ -36,13 +34,13 @@
         x: 0,
         opacity: 1,
         transition: {
-          delay: 950,
+          delay: 2100,
           duration: 800,
         },
       }"
     >
       <div class="tl-content">
-        <h2>Gina Day – Educare offers the following :</h2>
+        <h2 class="text-title">What we offer</h2>
         <span class="text-holder" v-for="(offer, i) in offers" :key="i">
           <p>-</p>
           <p class="text">{{ offer.text }}</p>
@@ -58,40 +56,40 @@ export default {
     return {
       offers: [
         {
-          text: "Classes from 0- 6 Years old",
+          text: "Classes from 0- 6 Years old.",
         },
         {
-          text: "Daily Program we strictly follow every day.",
+          text: "Daily Program.",
         },
         {
-          text: "Menu pepared Daily by kitchen staff (breakfast & Lunch)",
+          text: "Menu pepared Daily by kitchen staff (Breakfast & Lunch).",
         },
         {
-          text: "Potty Training",
+          text: "Potty Training.",
         },
         {
           text: "CCTV Camera on both premises.",
         },
         {
-          text: "Qualified Teachers ( Teachers are all qualified  )",
+          text: "Qualified Teachers.",
         },
         {
-          text: "Aftercare ( Teacher will assist with homework and reading skills, School holiday assistance as well)",
+          text: "Aftercare ( Teacher will assist with homework and reading skills, School holiday assistance aswell).",
         },
         {
-          text: "Class Rooms and Play Area",
+          text: "Class Rooms and Play Area.",
         },
         {
-          text: "Reports ( All kids are evaluated the end of the Year by Teacher)",
+          text: "Reports ( All kids are evaluated the end of the Year by Teacher).",
         },
         {
-          text: "Parent Meetings ( Always in contact with Parents)",
+          text: "Parent Meetings.",
         },
         {
-          text: "Year End Party for all kids. ( includes slides & jumoing Castles etc.)",
+          text: "Year End Party for all kids ( includes slides & jumping Castles etc.).",
         },
         {
-          text: "Year End Graduation Concert and graduation/class photos.",
+          text: "Year End Graduation Concert.",
         },
       ],
     };
@@ -186,6 +184,14 @@ h1 {
   background-color: #fff;
   position: relative;
   border-radius: 6px;
+}
+
+.p1 {
+  margin-bottom: 2%;
+}
+
+.text-title {
+  margin-bottom: 2%;
 }
 
 .text-holder {
