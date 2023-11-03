@@ -79,7 +79,7 @@ export default {
 
 .t-img {
   width: 200px;
-  aspet-ratio:1/1;
+  aspect-ratio: 1/1;
   border: 5px solid black;
   border-radius: 50%;
 }
