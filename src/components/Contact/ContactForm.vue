@@ -146,24 +146,34 @@ export default {
         tel: this.tel,
         message: this.assist,
       };
-      console.log(emailBody);
-      this.$swal({
-        icon: "success",
-        text: "Your query has been sent.",
-        confirmButtonText: "Ok",
-      }).then((result) => {
-        if (result.isConfirmed) {
-          (this.name = null),
-            (this.surname = null),
-            (this.address = null),
-            (this.tel = null),
-            (this.message = null),
-            console.log("Everything deleted");
-        } else {
-          console.log("Nothing to report");
-        }
-      });
-      return this.$store.dispatch("sendEmail", emailBody);
+
+      if (
+        this.name.length == 0 ||
+        this.surname.length == 0 ||
+        this.address.length == 0 ||
+        this.tel.length == 0
+      ) {
+        console.log(emailBody);
+      } else {
+        console.log(emailBody);
+        this.$swal({
+          icon: "success",
+          text: "Your query has been sent.",
+          confirmButtonText: "Ok",
+        }).then((result) => {
+          if (result.isConfirmed) {
+            (this.name = null),
+              (this.surname = null),
+              (this.address = null),
+              (this.tel = null),
+              (this.message = null),
+              console.log("Everything deleted");
+          } else {
+            console.log("Nothing to report");
+          }
+        });
+        return this.$store.dispatch("sendEmail", emailBody);
+      }
     },
   },
 };
