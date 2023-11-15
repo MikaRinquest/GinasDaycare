@@ -27,7 +27,7 @@ export default {
         },
         {
           img: "https://i.postimg.cc/gjW80rVr/Whats-App-Image-2023-11-03-at-11-40-12.webp",
-          name: "Mariksa Deelman",
+          name: "Mariska Deelman",
           class: "ECD Teacher",
         },
         {

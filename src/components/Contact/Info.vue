@@ -14,8 +14,8 @@
       </span>
       <span class="span">
         <fa :icon="['fas', 'envelope']" class="icon" />
-        <a class="link" href="email:georginalukas1@gmail.com">
-          <p class="contact-info">georginalukas1@gmail.com</p>
+        <a class="link" href="email:ginasdayeducare@gmail.com">
+          <p class="contact-info">ginasdayeducare@gmail.com</p>
         </a>
       </span>
       <span class="span">
