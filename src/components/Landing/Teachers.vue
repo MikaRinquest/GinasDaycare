@@ -32,7 +32,7 @@ export default {
         },
         {
           img: "https://i.postimg.cc/CK9bWcdG/Whats-App-Image-2023-11-03-at-11-40-53.webp",
-          name: "Vivian Fishe",
+          name: "Vivian Fisher",
           class: "ECD Teacher",
         },
         {
