@@ -43,7 +43,7 @@ export default {};
 .nav-holder {
   display: flex;
   justify-content: space-evenly;
-  width: 45%;
+  width: 65%;
 }
 
 .route-name {
