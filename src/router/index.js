@@ -37,6 +37,15 @@ const routes = [
       return import(/* webpackChunkName: "about" */ "../views/ContactView.vue");
     },
   },
+  {
+    path: "/vacancies",
+    name: "vacancies",
+    component: function () {
+      return import(
+        /* webpackChunkName: "about" */ "../views/VacanciesView.vue"
+      );
+    },
+  },
 ];
 
 const router = createRouter({

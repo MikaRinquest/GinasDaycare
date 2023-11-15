@@ -16,6 +16,9 @@
       <router-link class="route-name" to="/contact" @click="toggle = !toggle"
         >Contact Us</router-link
       >
+      <router-link class="route-name" to="/vacancies" @click="toggle = !toggle"
+        >Vacancies</router-link
+      >
     </div>
   </nav>
 </template>

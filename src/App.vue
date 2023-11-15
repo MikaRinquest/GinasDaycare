@@ -54,7 +54,8 @@ p {
 #about,
 #services,
 #photos,
-#contact {
+#contact,
+#vacancies {
   padding-top: 5%;
 }
 
