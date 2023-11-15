@@ -2,7 +2,7 @@
   <div v-if="vacancies.length == 0" class="n-vac">
     <h1 class="nv-title">No vacancies available.</h1>
   </div>
-  <div class="a-vac">
+  <div class="a-vac" v-else>
     <h2 class="heading">Vacancies</h2>
     <div class="vac-holder">
       <div v-for="(job, i) in vacancies" :key="i" class="vac">
@@ -23,15 +23,11 @@ export default {
 };
 </script>
 <style scoped>
-.n-vac,
-.vac-holder {
-  height: 100%;
-}
-
 .n-vac {
   display: flex;
   justify-content: center;
   align-items: center;
+  min-height: 87vh;
 }
 
 .nv-title {
@@ -50,6 +46,7 @@ export default {
   padding-left: 5%;
   display: flex;
   flex-wrap: wrap;
+  height: 100%;
 }
 
 .vac {
