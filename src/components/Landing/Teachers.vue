@@ -98,13 +98,13 @@ export default {
 }
 
 .t-img {
-  width: 200px;
-  aspect-ratio: 1/1;
-  border: 5px solid black;
+  width: 217px;
+  height: 324px;
+  border: 2px solid black;
   border-radius: 50%;
 }
 
-.t-name {
+.t-class {
   font-size: 23px;
 }
 

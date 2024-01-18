@@ -1,16 +1,7 @@
 <template>
-  <div class="bg-holder">
-    <div class="bg"></div>
-  </div>
+  <div class="bg"></div>
 </template>
 <style scoped>
-.bg-holder {
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: top;
-  max-height: 50vh;
-}
-
 .bg {
   background-image: url("https://i.postimg.cc/c1nWSkVD/About-Page-1.jpg"); /*320 px*/
   background-image: url("https://i.postimg.cc/XqmTzPSy/About-Page-1.jpg"); /*640 px*/
