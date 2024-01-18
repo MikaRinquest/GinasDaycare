@@ -1,9 +1,9 @@
 <template>
   <section id="about">
+    <Background />
     <Vision />
     <Mission />
     <Values />
-    <Background />
   </section>
 </template>
 
