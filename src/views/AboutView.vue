@@ -1,5 +1,6 @@
 <template>
   <section id="about">
+    <Background />
     <Vision />
     <Mission />
     <Values />
@@ -7,11 +8,13 @@
 </template>
 
 <script>
+import Background from "@/components/About/Background.vue";
 import Vision from "@/components/About/Vision.vue";
 import Mission from "@/components/About/Mission.vue";
 import Values from "@/components/About/Values.vue";
 export default {
   components: {
+    Background,
     Vision,
     Mission,
     Values,
@@ -24,6 +27,7 @@ export default {
   padding-left: 2%;
   min-height: 97vh;
 }
+
 .title {
   margin-bottom: 5px;
 }
@@ -48,6 +52,12 @@ export default {
 .text {
   max-width: 300px;
   margin-top: 5px;
+}
+
+@media only screen and (max-width: 801px) {
+  #about {
+    padding-top: 0;
+  }
 }
 
 /* Average Devices */

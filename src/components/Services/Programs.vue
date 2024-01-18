@@ -8,12 +8,12 @@
       List or Extra Mural Activities for the kids.
     </p>
     <div class="download-content">
-      <a href="/MENU.pdf" download class="download"> MEAL PLAN </a>
-      <a href="/Application_form.pdf" download class="download">
-        EXTRA MURAL ACTIVITIES
+      <a href="/MENU.pdf" download class="download"> Meal Plan </a>
+      <a href="/Needs_List.pdf" download class="download">
+        Stationery and Food Contributions
       </a>
-      <a href="/Stationary_list.pdf" download class="download">
-        STATIONERY AND FOOD CONTRIBUTIONS
+      <a href="/Application_form.pdf" download class="download">
+        Extra Mural Activities
       </a>
     </div>
   </div>

@@ -2,9 +2,15 @@
   <div class="stars">
     <h2 class="title star-t">Meet Our Staff</h2>
     <div class="teacher-holder">
-      <div class="teacher" v-for="(teacher, i) in teachers" :key="i">
-        <img :src="teacher.img" :alt="teacher" class="t-img" />
+      <div class="teacher" v-for="(teacher, i) in teachers1" :key="i">
+        <img :src="teacher.img" :alt="teacher.name" class="t-img" />
         <p class="t-class">{{ teacher.name }} - {{ teacher.class }}</p>
+      </div>
+      <div class="holder">
+        <div class="teacher" v-for="(teacher, i) in teachers2" :key="i">
+          <img :src="teacher.img" :alt="teacher.name" class="t-img" />
+          <p class="t-class">{{ teacher.name }} - {{ teacher.class }}</p>
+        </div>
       </div>
     </div>
   </div>
@@ -14,41 +20,48 @@
 export default {
   data() {
     return {
-      teachers: [
-        {
-          img: "https://i.postimg.cc/d1dGvGTz/Whats-App-Image-2023-11-03-at-11-39-21.webp",
-          name: "Anthea Matiesie",
-          class: "Kitchen Staff",
-        },
+      teachers1: [
         {
           img: "https://i.postimg.cc/KY1nq6cc/Whats-App-Image-2023-11-03-at-11-39-48.webp",
           name: "Chante Skinner",
           class: "ECD Teacher",
         },
         {
-          img: "https://i.postimg.cc/gjW80rVr/Whats-App-Image-2023-11-03-at-11-40-12.webp",
+          img: "https://i.postimg.cc/qvrw2DwR/Mariska-Deelman-ECD-Teacher-1.jpg",
           name: "Mariska Deelman",
           class: "ECD Teacher",
         },
         {
-          img: "https://i.postimg.cc/CK9bWcdG/Whats-App-Image-2023-11-03-at-11-40-53.webp",
+          img: "https://i.postimg.cc/MZhdppj1/Vivian-Fisher-ECD-Teacher-1.jpg",
           name: "Vivian Fisher",
           class: "ECD Teacher",
         },
         {
-          img: "https://i.postimg.cc/VL7gKB9R/Whats-App-Image-2023-11-03-at-11-47-10.webp",
+          img: "https://i.postimg.cc/85YfwsV4/Maxree-Anne-David-ECD-Teacher-1.jpg",
           name: "Maxree Anne David",
           class: "ECD Teacher",
         },
         {
-          img: "https://i.postimg.cc/FHQXGv9m/Whats-App-Image-2023-11-03-at-11-54-28.webp",
+          img: "https://i.postimg.cc/RFhncK2q/Nonceba-Ngqokoma-ECD-Teacher-1.jpg",
           name: "Nonceba Ngqokoma",
           class: "ECD Teacher",
         },
         {
-          img: "https://i.postimg.cc/J47K3dX0/Whats-App-Image-2023-11-03-at-11-45-05.webp",
+          img: "https://i.postimg.cc/23RbRJyB/Caron-Koopman-Assistant-ECD-Teacher-1.jpg",
           name: "Caron Koopman",
           class: "Assistant ECD Teacher",
+        },
+      ],
+      teachers2: [
+        {
+          img: "https://i.postimg.cc/Qx1S9Zpw/Lauren-Aftercare-Administrator-1.jpg",
+          name: "Lauren",
+          class: "Aftercare & Administration",
+        },
+        {
+          img: "https://i.postimg.cc/J0BDFmrL/Anthea-Matiesie-Kitchen-Staff-1.jpg",
+          name: "Anthea Matiesie",
+          class: "Kitchen Staff",
         },
       ],
     };
@@ -67,6 +80,13 @@ export default {
 .teacher-holder {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.holder {
+  display: flex;
+  flex-wrap: wrap;
+  width: 70%;
 }
 
 .teacher {
@@ -93,8 +113,8 @@ export default {
     margin: 1%;
   }
 
-  .t-name {
-    font-size: 20px;
+  .t-class {
+    font-size: 17px;
   }
 }
 </style>

@@ -5,7 +5,7 @@
         >Home</router-link
       >
       <router-link class="route-name" to="/about" @click="toggle = !toggle"
-        >About</router-link
+        >About Us</router-link
       >
       <router-link class="route-name" to="/services" @click="toggle = !toggle"
         >Services</router-link
