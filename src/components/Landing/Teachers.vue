@@ -6,12 +6,6 @@
         <img :src="teacher.img" :alt="teacher.name" class="t-img" />
         <p class="t-class">{{ teacher.name }} - {{ teacher.class }}</p>
       </div>
-      <div class="holder">
-        <div class="teacher" v-for="(teacher, i) in teachers2" :key="i">
-          <img :src="teacher.img" :alt="teacher.name" class="t-img" />
-          <p class="t-class">{{ teacher.name }} - {{ teacher.class }}</p>
-        </div>
-      </div>
     </div>
   </div>
 </template>
@@ -22,7 +16,7 @@ export default {
     return {
       teachers1: [
         {
-          img: "https://i.postimg.cc/KY1nq6cc/Whats-App-Image-2023-11-03-at-11-39-48.webp",
+          img: "https://i.postimg.cc/B6hkpVbH/Chante-Skinner.jpg",
           name: "Chante Skinner",
           class: "ECD Teacher",
         },
@@ -46,8 +40,6 @@ export default {
           name: "Caron Koopman",
           class: "Assistant ECD Teacher",
         },
-      ],
-      teachers2: [
         {
           img: "https://i.postimg.cc/Qx1S9Zpw/Lauren-Aftercare-Administrator-1.jpg",
           name: "Lauren",
