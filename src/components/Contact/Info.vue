@@ -7,9 +7,6 @@
           <a class="link" href="tel:073 283 6633">
             <p class="contact-info">073 283 6633</p>
           </a>
-          <a class="link" href="tel:087 379 7285">
-            <p class="contact-info">087 379 7285</p>
-          </a>
         </span>
       </span>
       <span class="span">
@@ -29,7 +26,7 @@
       </span>
       <span class="span">
         <fa :icon="[fas, 'location-dot']" class="icon" />
-        <p class="contact-info">Come find us</p>
+        <p class="contact-info">Find us here:</p>
       </span>
       <iframe
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3312.6595071098363!2d18.723184975400372!3d-33.87266491925846!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1dcc536c01e2579b%3A0x8075589bd9bc99ba!2sGina%20DayCare!5e0!3m2!1sen!2sza!4v1695104469361!5m2!1sen!2sza"

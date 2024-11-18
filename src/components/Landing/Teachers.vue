@@ -37,11 +37,6 @@ export default {
           class: "ECD Teacher",
         },
         {
-          img: "https://i.postimg.cc/85YfwsV4/Maxree-Anne-David-ECD-Teacher-1.jpg",
-          name: "Maxree Anne David",
-          class: "ECD Teacher",
-        },
-        {
           img: "https://i.postimg.cc/RFhncK2q/Nonceba-Ngqokoma-ECD-Teacher-1.jpg",
           name: "Nonceba Ngqokoma",
           class: "ECD Teacher",
@@ -57,11 +52,6 @@ export default {
           img: "https://i.postimg.cc/Qx1S9Zpw/Lauren-Aftercare-Administrator-1.jpg",
           name: "Lauren",
           class: "Aftercare & Administration",
-        },
-        {
-          img: "https://i.postimg.cc/J0BDFmrL/Anthea-Matiesie-Kitchen-Staff-1.jpg",
-          name: "Anthea Matiesie",
-          class: "Kitchen Staff",
         },
       ],
     };
